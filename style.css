@@ -4,18 +4,21 @@
 	font-family: Georgia;
 }
 
+/* ########################################################################################## */
+/* Navbar */
+
 .navbar {
 	width: 100%;
 	height: 70px;	/* .navbar height */
-	background-color: #E2EFFA;
+	background-color: #CEE8FE;
 	position: fixed;
 	top: 0px;
 	left: 0px;
-	border-bottom: 1px solid #B2C3DB;
+	border-bottom: 1px solid #AEDDFF; /* .navbar border-color */
 }
 
 .navbar a {
-	color: #063760;
+	color: #034C89;
 	text-decoration: none;
 }
 
@@ -29,7 +32,7 @@
 .nav-title a {
 	line-height: 70px;	/* this must be equal to .navbar height */
 	font-size: 4em;
-	font-family: 'Myriad Pro';
+	font-family: 'Arial', 'Myriad Pro';
 }
 
 .nav-links {
@@ -42,7 +45,7 @@
 	float: right;
 	height: 100%;
 	width: 150px;
-	border-left: 1px solid #B2C3DB;
+	border-left: 1px solid #AEDDFF;	/* this must be equal to .navbar border-color */
 	text-align: center;
 	list-style-type: none;
 }
@@ -52,10 +55,112 @@
 	font-family: 'Myriad Pro';
 	font-size: 1.2em;
 	display: block;
-	background-color: #E2EFFA;
+	background-color: #CEE8FE;
 	transition: background-color 0.3s ease-in-out;
 }
 
 .nav-link a:hover {
-	background-color: #B2C3DB;/*#82B3DB*/;
+	background-color: #AEDDFF;	/* this must be equal to .navbar border-color */
+}
+
+/* End Navbar */
+/* ########################################################################################## */
+/* Intro */
+
+.intro {
+	margin-top: 70px;	/* this must be equal to .navbar height */
+	width: 100%;
+	height: 300px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #FF9031;
+	border-bottom: 1px solid #DF7021;
+}
+
+.intro-inner {
+	margin: auto;
+	width: 1000px;
+	height: 300px;
+}
+
+.intro-list {
+	list-style-type: none;
+	width: 500px;
+	height: 300px;
+	float: left;
+}
+
+.intro-portrait {
+	border-radius: 3px;
+}
+
+.intro-portrait img {
+	width: 300px;
+	height: 300px;
+	display: block;
+	margin: auto;
+}
+
+.intro-about {
+	display: block;
+	margin: auto;
+	font-size: 1.5em;
+	display: flex;
+	align-items: center; /* align vertical */
+}
+
+/* End Intro */
+/* ########################################################################################## */
+/* Skills */
+
+.skills {
+	width: 100%;
+	height: 400px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #50DA59;
+	border-bottom: 1px solid #30BA39;
+}
+
+.skills-inner {
+	margin: auto;
+	height: 400px;
+	width: 1000px;
+}
+
+.skills-title {
+	text-align: center;
+	font-size: 3em;
+	font-weight: bold;
+	font-family: 'Myriad Pro';
+}
+
+.skills-box {
+	margin: auto;
+	width: 600px;
+	margin-top: 40px;
+}
+
+.skills-box-left {
+	width: 300px;
+	float: left;
+}
+
+.skills-box-right {
+	width: 300px;
+	float: right;
+}
+
+.skills-list {
+	margin: auto;
+	width: 100px;
+}
+
+.skills-list li {
+	margin-bottom: 10px;
+}
+
+.skills-list p {
+	text-align: left;
+	font-size: 1.5em;
 }
