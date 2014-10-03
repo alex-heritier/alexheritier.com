@@ -3,3 +3,59 @@
 	padding: 0;
 	font-family: Georgia;
 }
+
+.navbar {
+	width: 100%;
+	height: 70px;	/* .navbar height */
+	background-color: #E2EFFA;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	border-bottom: 1px solid #B2C3DB;
+}
+
+.navbar a {
+	color: #063760;
+	text-decoration: none;
+}
+
+.nav-title {
+	float: left;
+	height: 100%;
+	width: 300px;
+	padding-left: 10px;
+}
+
+.nav-title a {
+	line-height: 70px;	/* this must be equal to .navbar height */
+	font-size: 4em;
+	font-family: 'Myriad Pro';
+}
+
+.nav-links {
+	float: right;
+	height: 100%;
+	width: 40%;
+}
+
+.nav-link {
+	float: right;
+	height: 100%;
+	width: 150px;
+	border-left: 1px solid #B2C3DB;
+	text-align: center;
+	list-style-type: none;
+}
+
+.nav-link a {
+	line-height: 70px;	/* this must be equal to .navbar height */
+	font-family: 'Myriad Pro';
+	font-size: 1.2em;
+	display: block;
+	background-color: #E2EFFA;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.nav-link a:hover {
+	background-color: #B2C3DB;/*#82B3DB*/;
+}
