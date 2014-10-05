@@ -12,9 +12,11 @@
 	height: 80px;	/* .navbar height */
 	background-color: #CEE8FE;
 	position: fixed;
-	top: 0px;
-	left: 0px;
+	top: 0;
+	left: 0;
+	opacity: 0.9;
 	border-bottom: 1px solid #AEDDFF; /* .navbar border-color */
+	box-shadow: 0 -5px 30px black;
 }
 
 .navbar a {
@@ -68,13 +70,18 @@
 /* Intro */
 
 .intro {
-	margin-top: 70px;	/* this must be equal to .navbar height */
 	width: 100%;
-	height: 300px;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	height: 380px;
+	padding-top: 100px;
+	padding-bottom: 100px;
 	background-color: #FF9031;
 	border-bottom: 1px solid #DF7021;
+}
+
+.intro-filler {
+	width: 100%;
+	height: 70px;
+	background-color: #FF9031;
 }
 
 .intro-inner {
@@ -86,7 +93,7 @@
 .intro-list {
 	list-style-type: none;
 	width: 500px;
-	height: 300px;
+	height: 100%;
 	float: left;
 }
 
@@ -96,9 +103,11 @@
 
 .intro-portrait img {
 	width: 300px;
-	height: 300px;
+	height: 100%;
 	display: block;
 	margin: auto;
+	border-radius: 5px;
+	border: 2px solid black;
 }
 
 .intro-about {
@@ -224,8 +233,9 @@
 .projects-portrait img {
 	width: 450px;
 	height: 225;
-	border-radius: 3px;
+	border-radius: 5px;
 	box-shadow: -10px 10px 15px #222;
+	border: 2px solid black;
 }
 
 .projects-about {
@@ -266,3 +276,6 @@
 	height: 50px;
 	font-size: 1.5em;
 }
+
+/* End Footer */
+/* ########################################################################################## */
