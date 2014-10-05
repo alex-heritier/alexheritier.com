@@ -10,17 +10,17 @@
 .navbar {
 	width: 100%;
 	height: 80px;	/* .navbar height */
-	background-color: #CEE8FE;
+	background-color: #eee;
 	position: fixed;
 	top: 0;
 	left: 0;
 	opacity: 0.9;
-	border-bottom: 1px solid #AEDDFF; /* .navbar border-color */
+	border-bottom: 1px solid #ccc; /* .navbar border-color */
 	box-shadow: 0 -5px 30px black;
 }
 
 .navbar a {
-	color: #034C89;
+	color: #222;
 	text-decoration: none;
 }
 
@@ -47,7 +47,7 @@
 	float: right;
 	height: 100%;
 	width: 150px;
-	border-left: 1px solid #AEDDFF;	/* this must be equal to .navbar border-color */
+	border-left: 1px solid #ccc;	/* this must be equal to .navbar border-color */
 	text-align: center;
 	list-style-type: none;
 }
@@ -57,12 +57,12 @@
 	font-family: 'Myriad Pro';
 	font-size: 1.2em;
 	display: block;
-	background-color: #CEE8FE;
+	background-color: #eee;
 	transition: background-color 0.3s ease-in-out;
 }
 
 .nav-link a:hover {
-	background-color: #AEDDFF;	/* this must be equal to .navbar border-color */
+	background-color: #ddd;	/* this must be equal to .navbar border-color */
 }
 
 /* End Navbar */
@@ -74,14 +74,14 @@
 	height: 380px;
 	padding-top: 100px;
 	padding-bottom: 100px;
-	background-color: #FF9031;
-	border-bottom: 1px solid #DF7021;
+	background-color: #ddd;
+	border-bottom: 2px solid black;
 }
 
 .intro-filler {
 	width: 100%;
 	height: 70px;
-	background-color: #FF9031;
+	background-color: #ddd;
 }
 
 .intro-inner {
@@ -125,8 +125,8 @@
 	height: 400px;
 	padding-top: 50px;
 	padding-bottom: 50px;
-	background-color: #50DA59;
-	border-bottom: 1px solid #30BA39;
+	background-image: url('img/tweed.png');
+	border-bottom: 2px solid black;
 }
 
 .skills-inner {
@@ -177,6 +177,7 @@
 .skills-list p {
 	text-align: left;
 	font-size: 2em;
+	cursor: pointer;
 }
 
 /* End Skills */
@@ -188,8 +189,8 @@
 	height: 1000px;
 	padding-top: 50px;
 	padding-bottom: 50px;
-	background-color: #FF615D;
-	border-bottom: 1px solid #DF413D;
+	background-color: #ddd;
+	border-bottom: 2px solid black;
 }
 
 .projects-inner {
@@ -254,8 +255,7 @@
 	height: 50px;
 	padding-top: 20px;
 	padding-bottom: 10px;
-	background-color: #555;
-	border-bottom: 1px solid #333;
+	background-image: url('img/tweed.png');
 }
 
 .footer-contacts {
