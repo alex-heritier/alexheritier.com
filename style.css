@@ -127,7 +127,7 @@
 	padding-bottom: 50px;
 	background-image: url('img/tweed.png');
 	border-bottom: 2px solid black;
-	color: #fff;
+	color: #ddd;
 }
 
 .skills p {
@@ -263,7 +263,7 @@
 }
 
 .footer p, .footer a {
-	color: #fff;
+	color: #ddd;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
@@ -275,6 +275,11 @@
 
 .footer-contacts a {
 	text-decoration: none;
+	transition: color 0.3s;
+}
+
+.footer-contacts a:hover {
+	color: #fff;
 }
 
 .footer-title {
@@ -292,7 +297,7 @@
 .contact {
 	padding-top: 60px;
 	width: 100%;
-	height: 550px;
+	height: 570px;
 	background-color: #eee;
 }
 
