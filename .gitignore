@@ -1,3 +1,4 @@
 img/HD/*
 backup.zip
-
+*.css.map
+.sass-cache
