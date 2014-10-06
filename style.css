@@ -9,18 +9,18 @@
 
 .navbar {
 	width: 100%;
-	height: 80px;	/* .navbar height */
-	background-color: #CEE8FE;
+	height: 60px;	/* .navbar height */
+	background-color: #eee;
 	position: fixed;
 	top: 0;
 	left: 0;
 	opacity: 0.9;
-	border-bottom: 1px solid #AEDDFF; /* .navbar border-color */
+	border-bottom: 1px solid #ccc; /* .navbar border-color */
 	box-shadow: 0 -5px 30px black;
 }
 
 .navbar a {
-	color: #034C89;
+	color: #222;
 	text-decoration: none;
 }
 
@@ -32,8 +32,8 @@
 }
 
 .nav-title a {
-	line-height: 80px;	/* this must be equal to .navbar height */
-	font-size: 4em;
+	line-height: 65px;	/* this must be equal to .navbar height */
+	font-size: 3.1em;
 	font-family: 'Arial', 'Myriad Pro';
 }
 
@@ -47,22 +47,22 @@
 	float: right;
 	height: 100%;
 	width: 150px;
-	border-left: 1px solid #AEDDFF;	/* this must be equal to .navbar border-color */
+	border-left: 1px solid #ccc;	/* this must be equal to .navbar border-color */
 	text-align: center;
 	list-style-type: none;
 }
 
 .nav-link a {
-	line-height: 80px;	/* this must be equal to .navbar height */
+	line-height: 60px;	/* this must be equal to .navbar height */
 	font-family: 'Myriad Pro';
 	font-size: 1.2em;
 	display: block;
-	background-color: #CEE8FE;
+	background-color: #eee;
 	transition: background-color 0.3s ease-in-out;
 }
 
 .nav-link a:hover {
-	background-color: #AEDDFF;	/* this must be equal to .navbar border-color */
+	background-color: #ddd;	/* this must be equal to .navbar border-color */
 }
 
 /* End Navbar */
@@ -74,14 +74,14 @@
 	height: 380px;
 	padding-top: 100px;
 	padding-bottom: 100px;
-	background-color: #FF9031;
-	border-bottom: 1px solid #DF7021;
+	background-color: #ddd;
+	border-bottom: 2px solid black;
 }
 
 .intro-filler {
 	width: 100%;
-	height: 70px;
-	background-color: #FF9031;
+	height: 60px;	/* this must be equal to .navbar height */
+	background-color: #ddd;
 }
 
 .intro-inner {
@@ -122,16 +122,22 @@
 
 .skills {
 	width: 100%;
-	height: 400px;
+	height: 300px;
 	padding-top: 50px;
 	padding-bottom: 50px;
-	background-color: #50DA59;
-	border-bottom: 1px solid #30BA39;
+	background-image: url('img/tweed.png');
+	border-bottom: 2px solid black;
+	color: #ddd;
+}
+
+.skills p {
+	color: black;
+	text-shadow: 0 2px 3px #666;
 }
 
 .skills-inner {
 	margin: auto;
-	height: 400px;
+	height: 100%;
 	width: 100%;
 }
 
@@ -167,7 +173,6 @@
 	margin-top: 5px;
 	padding-left: 30px;
 	font-size: 0.7em;
-	color: black;
 }
 
 .skills-list li {
@@ -177,6 +182,7 @@
 .skills-list p {
 	text-align: left;
 	font-size: 2em;
+	cursor: pointer;
 }
 
 /* End Skills */
@@ -185,11 +191,11 @@
 
 .projects {
 	width: 100%;
-	height: 1000px;
+	height: 850px;
 	padding-top: 50px;
 	padding-bottom: 50px;
-	background-color: #FF615D;
-	border-bottom: 1px solid #DF413D;
+	background-color: #ddd;
+	border-bottom: 2px solid black;
 }
 
 .projects-inner {
@@ -207,7 +213,7 @@
 .projects-project {
 	width: 100%;
 	height: 300px;
-	margin-top: 100px;
+	margin-top: 70px;
 }
 
 .projects-project-title {
@@ -254,8 +260,12 @@
 	height: 50px;
 	padding-top: 20px;
 	padding-bottom: 10px;
-	background-color: #555;
-	border-bottom: 1px solid #333;
+	background-image: url('img/tweed.png');
+}
+
+.footer p, .footer a {
+	color: black;
+	text-shadow: 0 1px 3px #666;
 }
 
 .footer-contacts {
@@ -266,16 +276,87 @@
 
 .footer-contacts a {
 	text-decoration: none;
-	color: #222;
+	transition: color 0.3s;
+}
+
+.footer-contacts a:hover {
+	color: #bbb;
 }
 
 .footer-title {
 	float: right;
 	width: 200px;
-	line-height: 50px;
+	line-height: 42px;
 	height: 50px;
 	font-size: 1.5em;
 }
 
 /* End Footer */
+/* ########################################################################################## */
+/* Contact Form */
+
+.contact {
+	padding-top: 60px;
+	width: 100%;
+	height: 570px;
+	background-color: #eee;
+}
+
+.contact-inner {
+	padding-top: 30px;
+	width: 800px;
+}
+
+.contact-title {
+	text-align: center;
+	font-size: 3em;
+	font-family: 'Myriad Pro';
+	font-weight: bold;
+}
+
+.contact-entry {
+	margin: 0;
+	margin-bottom: 10px;
+	width: 450px;
+	font-size: 1.5em;
+}
+
+.contact-entry input {
+	border-radius: 3px;
+	height: 20px;
+	border: 0;
+	box-shadow: 0 0 1px black;
+	transition: box-shadow 0.2s;
+	float: right;
+	height: 25px;
+	width: 300px;
+	padding-left: 6px;
+	font-size: 0.8em;
+}
+
+.contact-entry input:focus {
+	box-shadow: 0 0 7px black;
+}
+
+.contact-entry textarea {
+	width: 800px;
+	height: 300px;
+	border-radius: 5px;
+	box-shadow: 0 0 1px black;
+	transition: box-shadow 0.2s;
+	padding: 10px;
+	font-size: 0.7em;
+}
+
+.contact-inner textarea:focus {
+	box-shadow: 0 0 7px black;
+}
+
+.contact-submit {
+	width: 80px;
+	font-size: 10em;
+	cursor: pointer;
+}
+
+/* End Contact Form */
 /* ########################################################################################## */
