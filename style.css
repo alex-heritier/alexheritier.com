@@ -131,7 +131,8 @@
 }
 
 .skills p {
-	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+	color: black;
+	text-shadow: 0 2px 3px #666;
 }
 
 .skills-inner {
@@ -263,8 +264,8 @@
 }
 
 .footer p, .footer a {
-	color: #ddd;
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	color: black;
+	text-shadow: 0 1px 3px #666;
 }
 
 .footer-contacts {
@@ -279,13 +280,13 @@
 }
 
 .footer-contacts a:hover {
-	color: #fff;
+	color: #bbb;
 }
 
 .footer-title {
 	float: right;
 	width: 200px;
-	line-height: 50px;
+	line-height: 42px;
 	height: 50px;
 	font-size: 1.5em;
 }
