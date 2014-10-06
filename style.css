@@ -9,7 +9,7 @@
 
 .navbar {
 	width: 100%;
-	height: 80px;	/* .navbar height */
+	height: 60px;	/* .navbar height */
 	background-color: #eee;
 	position: fixed;
 	top: 0;
@@ -32,8 +32,8 @@
 }
 
 .nav-title a {
-	line-height: 80px;	/* this must be equal to .navbar height */
-	font-size: 4em;
+	line-height: 65px;	/* this must be equal to .navbar height */
+	font-size: 3.1em;
 	font-family: 'Arial', 'Myriad Pro';
 }
 
@@ -53,7 +53,7 @@
 }
 
 .nav-link a {
-	line-height: 80px;	/* this must be equal to .navbar height */
+	line-height: 60px;	/* this must be equal to .navbar height */
 	font-family: 'Myriad Pro';
 	font-size: 1.2em;
 	display: block;
@@ -80,7 +80,7 @@
 
 .intro-filler {
 	width: 100%;
-	height: 70px;
+	height: 60px;	/* this must be equal to .navbar height */
 	background-color: #ddd;
 }
 
@@ -122,16 +122,21 @@
 
 .skills {
 	width: 100%;
-	height: 400px;
+	height: 300px;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	background-image: url('img/tweed.png');
 	border-bottom: 2px solid black;
+	color: #fff;
+}
+
+.skills p {
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
 .skills-inner {
 	margin: auto;
-	height: 400px;
+	height: 100%;
 	width: 100%;
 }
 
@@ -167,7 +172,6 @@
 	margin-top: 5px;
 	padding-left: 30px;
 	font-size: 0.7em;
-	color: black;
 }
 
 .skills-list li {
@@ -186,7 +190,7 @@
 
 .projects {
 	width: 100%;
-	height: 1000px;
+	height: 850px;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	background-color: #ddd;
@@ -208,7 +212,7 @@
 .projects-project {
 	width: 100%;
 	height: 300px;
-	margin-top: 100px;
+	margin-top: 70px;
 }
 
 .projects-project-title {
@@ -258,6 +262,11 @@
 	background-image: url('img/tweed.png');
 }
 
+.footer p, .footer a {
+	color: #fff;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
 .footer-contacts {
 	padding-left: 5px;
 	float: left;
@@ -266,7 +275,6 @@
 
 .footer-contacts a {
 	text-decoration: none;
-	color: #222;
 }
 
 .footer-title {
@@ -282,7 +290,7 @@
 /* Contact Form */
 
 .contact {
-	margin-top: 80px;
+	padding-top: 60px;
 	width: 100%;
 	height: 550px;
 	background-color: #eee;
