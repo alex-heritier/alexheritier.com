@@ -2,3 +2,5 @@ img/HD/*
 backup.zip
 *.css.map
 .sass-cache
+node_modules/
+bower_modules/

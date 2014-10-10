@@ -1,3 +1,22 @@
+
+window.onload = function() {
+    var masterList = {
+        "CSS": [
+            "LESS",
+            "SASS"
+        ],
+        "Javascript": [
+            "Angular.js",
+            "jQuery"
+        ],
+        "PHP": [
+            "Codeigniter",
+            "Laravel"
+        ]
+    };
+};
+
+/*
 window.onload = function() {
     'use strict';
 
@@ -53,3 +72,4 @@ window.onload = function() {
         return masterList[p.innerHTML];
     }
 }
+*/

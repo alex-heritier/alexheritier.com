@@ -8,7 +8,7 @@ $main-font: 'Georgia';
 $main-font-size: 1.5em;
 
 $light-bg-color: #ddd;
-$dark-bg-image: url('img/tweed.png');
+$dark-bg-image: url('../img/tweed.png');
 
 
 * {
@@ -96,7 +96,7 @@ $navbar-border-color: #ccc;
 /* ########################################################################################## */
 /* Intro */
 
-$intro-height: 400px;
+$intro-height: 450px;
 $intro-inner-width: 1000px;
 $intro-padding: 100px;
 $intro-bg-color: $light-bg-color;
