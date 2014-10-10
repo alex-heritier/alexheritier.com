@@ -1,0 +1,13 @@
+{
+    "name": "www.aheritier.com",
+    "version": "0.0.1",
+    "dependencies": {
+        "jquery": "*",
+        "require": "*"
+    },
+    "devDependencies": {
+        "jquery": "*",
+        "require": "*",
+        "qunit": "*"
+    }
+}

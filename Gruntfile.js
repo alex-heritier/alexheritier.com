@@ -13,12 +13,15 @@ module.exports = function(grunt) {
 		sass: {
 			dist: {
 				options: {
-					style: 'expanded'
+					style: 'nested'
 				},
 				files: {
 					'css/style.css': 'css/style.scss'
 				}
 			}
+		},
+		jshint: {
+			all: ['*.js', 'scripts/scripts.js']
 		},
 		watch: {
 			files: ['scripts/scripts.js', 'css/style.scss'],
@@ -28,10 +31,12 @@ module.exports = function(grunt) {
 
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-sass');
+	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	grunt.registerTask('default', [
 		'uglify:dist',
-		'sass:dist'
+		'sass:dist',
+		'jshint:all'
 	]);
 };
