@@ -1,0 +1,291 @@
+/* ########################################################################################## */
+/* General */
+* {
+  margin: auto;
+  font-family: "Georgia"; }
+
+.mixin-title, .skills-title, .projects-title, .projects-project-title, .contact-title {
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  font-family: "Myriad Pro", Arial; }
+
+/* ########################################################################################## */
+/* Navbar */
+.navbar {
+  width: 100%;
+  height: 60px;
+  /* .navbar height */
+  background-color: #eee;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  border-bottom: 1px solid #ccc;
+  /* .navbar border-color */
+  box-shadow: 0 -5px 30px black; }
+  .navbar a {
+    color: #222;
+    text-decoration: none; }
+
+.nav-title {
+  float: left;
+  height: 100%;
+  width: 300px;
+  padding-left: 10px; }
+  .nav-title a {
+    line-height: 75px;
+    /* this must be equal to .navbar height */
+    font-size: 55px;
+    font-family: "Myriad Pro", Arial; }
+
+.nav-links {
+  float: right;
+  height: 100%;
+  width: 40%; }
+
+.nav-link {
+  float: right;
+  height: 100%;
+  width: 150px;
+  border-left: 1px solid #ccc;
+  /* this must be equal to .navbar border-color */
+  text-align: center;
+  list-style-type: none; }
+  .nav-link a {
+    line-height: 60px;
+    /* this must be equal to .navbar height */
+    font-family: "Myriad Pro", Arial;
+    font-size: 1.2em;
+    display: block;
+    background-color: #eee;
+    transition: background-color 0.3s ease-in-out; }
+  .nav-link a:hover {
+    background-color: #ccc;
+    /* this must be equal to .navbar border-color */ }
+
+/* ########################################################################################## */
+/* Intro */
+.intro {
+  width: 100%;
+  height: 450px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #ddd;
+  border-bottom: 2px solid #000;
+  overflow: auto; }
+
+.intro-filler {
+  width: 100%;
+  height: 60px;
+  /* this must be equal to .navbar height */
+  background-color: #ddd; }
+
+.intro-inner {
+  margin: auto;
+  width: 1000px;
+  height: 370px; }
+
+.intro-list {
+  list-style-type: none;
+  width: 500px;
+  height: 100%;
+  float: left; }
+
+.intro-portrait {
+  border-radius: 3px; }
+  .intro-portrait img {
+    width: 370px;
+    height: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    border: 2px solid black; }
+
+.intro-about {
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  /* align vertical */ }
+
+/* End Intro */
+/* ########################################################################################## */
+/* Skills */
+.skills {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-image: url("../img/tweed.png");
+  border-bottom: 2px solid #000;
+  overflow: auto; }
+  .skills p {
+    color: #000;
+    text-shadow: 0 2px 3px #666; }
+
+.skills-title {
+  height: 20px; }
+
+.skills-inner {
+  margin: auto;
+  width: 800px;
+  margin-top: 40px; }
+
+.skills-box-left {
+  width: 400px;
+  float: left; }
+
+.skills-box-right {
+  width: 400px;
+  float: right; }
+
+.skills-list {
+  margin: auto;
+  width: 100px; }
+  .skills-list li {
+    margin-bottom: 10px; }
+  .skills-list p {
+    text-align: left;
+    font-size: 2em;
+    cursor: pointer; }
+
+.skills-list-sublist {
+  margin-top: 5px;
+  padding-left: 30px;
+  font-size: 0.7em; }
+  .skills-list-sublist p {
+    color: #222; }
+
+/* End Skills */
+/* ########################################################################################## */
+/* Projects */
+.projects {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #ddd;
+  border-bottom: 2px solid #000;
+  overflow: auto; }
+
+.projects-inner {
+  width: 1000px;
+  padding-bottom: 50px; }
+
+.projects-project {
+  width: 100%;
+  margin-top: 50px;
+  height: 300px; }
+
+.projects-project-title {
+  font-size: 2em; }
+
+.projects-list {
+  width: 100%;
+  height: 250px;
+  margin-top: 20px;
+  padding: 0; }
+
+.projects-list-item {
+  list-style-type: none;
+  height: 250px;
+  width: 490px;
+  float: left; }
+  .projects-list-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: -10px 10px 15px #222;
+    border: 2px solid black; }
+
+.projects-about {
+  width: 450px;
+  float: right;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  /* align vertical */ }
+
+/* End Projects */
+/* ########################################################################################## */
+/* Footer */
+.footer {
+  width: 100%;
+  height: 80px;
+  background-image: url("../img/tweed.png"); }
+  .footer p,
+  .footer a {
+    color: #000;
+    text-shadow: 0 1px 3px #666; }
+
+.footer-contacts {
+  padding-left: 5px;
+  float: left;
+  width: 300px; }
+  .footer-contacts p,
+  .footer-contacts a {
+    margin-top: 13.33333px; }
+  .footer-contacts a {
+    text-decoration: none;
+    transition: color 0.3s; }
+  .footer-contacts a:hover {
+    color: #bbb; }
+
+.footer-title {
+  float: right;
+  width: 200px;
+  line-height: 80px;
+  height: 80px;
+  font-size: 1.5em; }
+
+/* End Footer */
+/* ########################################################################################## */
+/* Contact Form */
+.contact {
+  padding-top: 60px;
+  width: 100%;
+  height: 600px;
+  background-color: #ddd;
+  border-bottom: 2px solid #000; }
+
+.contact-inner {
+  padding-top: 40px;
+  width: 800px; }
+
+.contact-entry {
+  margin: 0;
+  margin-bottom: 10px;
+  width: 450px;
+  font-size: 1.5em; }
+  .contact-entry input {
+    border-radius: 3px;
+    height: 20px;
+    border: 0;
+    box-shadow: 0 0 1px black;
+    transition: box-shadow 0.2s;
+    float: right;
+    height: 25px;
+    width: 300px;
+    padding-left: 6px;
+    font-size: 0.8em; }
+  .contact-entry input:focus {
+    box-shadow: 0 0 7px black; }
+  .contact-entry textarea {
+    width: 800px;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 1px black;
+    transition: box-shadow 0.2s;
+    padding: 10px;
+    font-size: 0.7em; }
+  .contact-entry textarea:focus {
+    box-shadow: 0 0 7px black; }
+
+.contact-submit {
+  width: 80px;
+  font-size: 10em;
+  cursor: pointer; }
+
+/* End Contact Form */
+/* ########################################################################################## */
+
+/*# sourceMappingURL=style.css.map */
