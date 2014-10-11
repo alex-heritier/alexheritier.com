@@ -1,76 +1,49 @@
 
-window.onload = function() {
+requirejs.config({
+    baseUrl: 'scripts/',
+    paths: {
+        jquery: 'jquery.min'
+    }
+});
+
+require(["jquery"], function($) {
     var masterList = {
         "CSS": [
-            "LESS",
             "SASS"
         ],
         "Javascript": [
             "Angular.js",
-            "jQuery"
+            "jQuery",
+            "Require.js"
         ],
         "PHP": [
-            "Codeigniter",
+            "CodeIgniter",
             "Laravel"
         ]
     };
-    
-};
 
-/*
-window.onload = function() {
-    'use strict';
+    function addHiddenSubMenu(elements, data) {
+        elements.each(function() {
+            var that = $(this),
+                text = that.find("p").text();
 
-    var skillsList = document.getElementsByClassName("skills-list"),
-        childLists = skillsList[0].children,
-        children2 = skillsList[1].children,
-        masterList = {
-            "CSS": [
-                "LESS",
-                "SASS"
-            ],
-            "Javascript": [
-                "Angular.js",
-                "jQuery"
-            ],
-            "PHP": [
-                "Codeigniter",
-                "Laravel"
-            ]
-        };
-    for (var k = 0; k < skillsList.length; k++) {
-        var childLists = skillsList[k].children;
-        for (var i = 0; i < childLists.length; i++) {
-            (function() {
-                var entry = childLists[i],
-                    sub = getSublist(entry);
-                entry.sublistVisible = false;
-                if (sub !== undefined) {
-                    var subList = document.createElement("ul");
-                    subList.className = "skills-list-sublist";
-                    entry.onclick = function() {
-                        if (!entry.sublistVisible) {
-                            for (var j = 0; j < sub.length; j++) {
-                                var subSubList = document.createElement("li"),
-                                    subItem = document.createElement("p");
-                                subItem.innerHTML = sub[j];
-                                subSubList.appendChild(subItem);
-                                subList.appendChild(subSubList);
-                            }
-                        } else {
-                            entry.children[1].innerHTML = '';
-                        }
-                        entry.appendChild(subList);
-                        entry.sublistVisible = !entry.sublistVisible;
-                    }
+            if (data[text] !== undefined) {
+                var subList = $("<ul class='skills-list-sublist'>").hide();
+                for (var i = 0; i < data[text].length; i++) {
+                    var subListLi = $("<li>"),
+                        subListP = $("<p>");
+                    subListP.text(data[text][i]);
+                    subListLi.append(subListP);
+                    subList.append(subListLi);
                 }
-            })();
-        }
+                that.append(subList);
+            }
+        });
     }
 
-    function getSublist(listItem) {
-        var p = listItem.children[0];
-        return masterList[p.innerHTML];
-    }
-}
-*/
+    var elements = $(".skills-list li");
+    addHiddenSubMenu(elements, masterList);
+    elements.click(function() {
+        $(this).find("ul").toggle({duration: 200, easing: 'linear'});
+    });
+});

@@ -109,6 +109,7 @@ $intro-border-color: #000;
     padding-bottom: $intro-padding;
     background-color: $intro-bg-color;
     border-bottom: 2px solid $intro-border-color;
+    overflow: auto;
 }
 
 .intro-filler {
@@ -153,20 +154,20 @@ $intro-border-color: #000;
 /* ########################################################################################## */
 /* Skills */
 
-$skills-height: 300px;
 $skills-padding: 50px;
 $skills-bg-image: $dark-bg-image;
 $skills-border-color: #000;
 $skills-font-color: #000;
+$skills-sublist-font-color: #222;
 $skills-inner-width: 800px;
 
 .skills {
     width: 100%;
-    height: $skills-height;
     padding-top: $skills-padding;
     padding-bottom: $skills-padding;
     background-image: $skills-bg-image;
     border-bottom: 2px solid $skills-border-color;
+    overflow: auto;
 
     p {
         color: $skills-font-color;
@@ -176,6 +177,7 @@ $skills-inner-width: 800px;
 
 .skills-title {
     @extend .mixin-title;
+    height: 20px;
 }
 
 .skills-inner {
@@ -213,13 +215,16 @@ $skills-inner-width: 800px;
     margin-top: 5px;
     padding-left: 30px;
     font-size: 0.7em;
+
+    p {
+        color: $skills-sublist-font-color;
+    }
 }
 
 /* End Skills */
 /* ########################################################################################## */
 /* Projects */
 
-$projects-height: 800px;
 $projects-inner-width: 1000px;
 $projects-project-height: 300px;
 $projects-list-height: $projects-project-height - 50px;
@@ -235,6 +240,7 @@ $projects-font-color: #000;
     padding-bottom: $projects-padding;
     background-color: $projects-bg-color;
     border-bottom: 2px solid $projects-border-color;
+    overflow: auto;
 }
 
 .projects-inner {
