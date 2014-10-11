@@ -154,7 +154,7 @@ $intro-border-color: #000;
 /* ########################################################################################## */
 /* Skills */
 
-$skills-padding: 50px;
+$skills-padding: 30px;
 $skills-bg-image: $dark-bg-image;
 $skills-border-color: #000;
 $skills-font-color: #000;
@@ -177,7 +177,7 @@ $skills-inner-width: 800px;
 
 .skills-title {
     @extend .mixin-title;
-    height: 20px;
+    margin-bottom: 20px;
 }
 
 .skills-inner {

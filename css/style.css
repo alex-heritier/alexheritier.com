@@ -113,8 +113,8 @@
 /* Skills */
 .skills {
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-image: url("../img/tweed.png");
   border-bottom: 2px solid #000;
   overflow: auto; }
@@ -123,7 +123,7 @@
     text-shadow: 0 2px 3px #666; }
 
 .skills-title {
-  height: 20px; }
+  margin-bottom: 20px; }
 
 .skills-inner {
   margin: auto;
