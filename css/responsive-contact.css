@@ -1,0 +1,60 @@
+/* GENERAL */
+* { font-family: Georgia; box-sizing: border-box; color: #333; padding: 0; margin: 0; }
+
+a { color: #333; text-decoration: none; }
+
+a:hover { text-decoration: underline; }
+
+.mixin-light-bg { background-color: #ddd; }
+
+.mixin-dark-bg, .footer { background-image: url("../img/tweed.png"); }
+
+/* GENERAL */
+* { font-family: Georgia; box-sizing: border-box; color: #333; padding: 0; margin: 0; }
+
+a { color: #333; text-decoration: none; }
+
+a:hover { text-decoration: underline; }
+
+.mixin-light-bg { background-color: #ddd; }
+
+.mixin-dark-bg, .footer { background-image: url("../img/tweed.png"); }
+
+/* NAVBAR */
+.navbar { height: 100px; width: 100%; }
+
+.nav-title { padding: 5px; padding-top: 8px; width: 100%; height: 66.66667px; font-size: 3em; line-height: 45px; background-color: #eee; color: #222; border-bottom: 1px solid #ccc; font-family: 'Myriad Pro'; }
+
+.nav-links { height: 33.33333px; width: 100%; margin: 0; padding: 0; border-bottom: 1px solid #ccc; }
+
+.nav-link { height: 100%; width: 33.33%; list-style-type: none; float: right; border-left: 1px solid #ccc; text-align: center; }
+.nav-link a { display: block; font-size: 1.2em; line-height: 33.33333px; transition: background-color 0.3s ease-in-out; }
+.nav-link a:hover { text-decoration: none; background-color: #ccc; /* this must be equal to .navbar border-color */ }
+
+.nav-links li:nth-of-type(3) { border-left: 0; }
+
+/* GENERAL */
+* { font-family: Georgia; box-sizing: border-box; color: #333; padding: 0; margin: 0; }
+
+a { color: #333; text-decoration: none; }
+
+a:hover { text-decoration: underline; }
+
+.mixin-light-bg { background-color: #ddd; }
+
+.mixin-dark-bg, .footer { background-image: url("../img/tweed.png"); }
+
+/* FOOTER */
+.footer { color: black; width: 100%; overflow: auto; padding: 20px 10px; font-size: 1em; }
+
+/* FOOTER */
+.contact { width: 100%; padding: 20px 15px; border-bottom: 2px solid black; }
+.contact h1 { text-align: center; font-family: 'Myriad Pro'; }
+
+.contact-form { width: 100%; }
+.contact-form p { width: 100%; padding-bottom: 5px; }
+.contact-form input { float: right; width: 70%; }
+.contact-form textarea { width: 100%; height: 80px; }
+.contact-form .contact-submit { float: none; width: auto; margin-top: 5px; }
+
+/*# sourceMappingURL=responsive-contact.css.map */

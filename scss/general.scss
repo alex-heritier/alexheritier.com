@@ -1,0 +1,31 @@
+
+/* GENERAL */
+
+ $font-color: #333;
+ $general-padding: 20px 15px;
+
+ * {
+     font-family: Georgia;
+     box-sizing: border-box;
+     color: $font-color;
+
+     padding: 0;
+     margin: 0;
+ }
+
+ a {
+     color: $font-color;
+     text-decoration: none;
+ }
+
+ a:hover {
+     text-decoration: underline;
+ }
+
+ .mixin-light-bg {
+     background-color: #ddd;
+ }
+
+ .mixin-dark-bg {
+     background-image: url('../img/tweed.png');
+ }

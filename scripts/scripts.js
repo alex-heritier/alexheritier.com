@@ -28,7 +28,7 @@ require(["jquery"], function($) {
                 text = that.find("p").text();
 
             if (data[text] !== undefined) {
-                var subList = $("<ul class='skills-list-sublist'>").hide();
+                var subList = $("<ul class='skills-sublist'>").hide();
                 for (var i = 0; i < data[text].length; i++) {
                     var subListLi = $("<li>"),
                         subListP = $("<p>");

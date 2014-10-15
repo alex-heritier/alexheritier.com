@@ -4,6 +4,12 @@
   margin: auto;
   font-family: "Georgia"; }
 
+.mixin-light-bg, .intro, .intro-filler, .projects, .contact {
+  background-color: #ddd; }
+
+.mixin-dark-bg, .skills, .footer {
+  background-image: url("../img/tweed.png"); }
+
 .mixin-title, .skills-title, .projects-title, .projects-project-title, .contact-title {
   text-align: center;
   font-size: 3em;
@@ -71,15 +77,13 @@
   height: 450px;
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: #ddd;
   border-bottom: 2px solid #000;
   overflow: auto; }
 
 .intro-filler {
   width: 100%;
   height: 60px;
-  /* this must be equal to .navbar height */
-  background-color: #ddd; }
+  /* this must be equal to .navbar height */ }
 
 .intro-inner {
   margin: auto;
@@ -99,8 +103,7 @@
     height: 100%;
     display: block;
     margin: auto;
-    border-radius: 5px;
-    border: 2px solid black; }
+    border: 1px solid black; }
 
 .intro-about {
   font-size: 1.5em;
@@ -115,7 +118,6 @@
   width: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
-  background-image: url("../img/tweed.png");
   border-bottom: 2px solid #000;
   overflow: auto; }
   .skills p {
@@ -162,7 +164,6 @@
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
-  background-color: #ddd;
   border-bottom: 2px solid #000;
   overflow: auto; }
 
@@ -172,8 +173,11 @@
 
 .projects-project {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 100px;
   height: 300px; }
+
+.projects-inner div:nth-of-type(1) {
+  margin-top: 0; }
 
 .projects-project-title {
   font-size: 2em; }
@@ -210,8 +214,7 @@
 /* Footer */
 .footer {
   width: 100%;
-  height: 80px;
-  background-image: url("../img/tweed.png"); }
+  height: 80px; }
   .footer p,
   .footer a {
     color: #000;
@@ -244,7 +247,6 @@
   padding-top: 60px;
   width: 100%;
   height: 600px;
-  background-color: #ddd;
   border-bottom: 2px solid #000; }
 
 .contact-inner {

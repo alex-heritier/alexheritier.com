@@ -4,10 +4,11 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0;">
     <title>Alex H&eacute;ritier | Web Developer</title>
 
     <!-- stylesheets -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive-contact.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -29,28 +30,24 @@
     </div>
     <!-- End Navbar -->
 
-    <!-- Contact Form -->
+    <!-- Contact -->
     <div class="contact">
-        <div class="contact-inner">
-            <p class="contact-title">Contact me</p>
-            <form method="POST" action="server/contact.php" class="contact-form">
-                <p class="contact-entry">Your email<input type="email" name="email"></p>
-                <p class="contact-entry">Subject<input type="text" name="title"></p>
-                <p class="contact-entry"><textarea name="message"></textarea></p>
-                <input type="submit" class="contact-submit" name="sub" value="Send">
-            </form>
-        </div>
+        <h1>Contact me</h1>
+        <form method="POST" action="server/contact.php" class="contact-form">
+            <p>Your email<input type="email" name="email"></p>
+            <p>Subject<input type="text" name="title"></p>
+            <textarea name="message"></textarea>
+            <input type="submit" class="contact-submit" name="sub" value="Send">
+        </form>
     </div>
-    <!-- End Contact Form -->
+    <!-- End Contact -->
 
     <!-- Footer -->
     <div class="footer">
+        <p>Alex H&eacute;ritier &copy;</p>
         <div class="footer-contacts">
             <p>Email: <a href="mailto: alex.heritier@gmail.com">alex.heritier@gmail.com</a></p>
             <p>Github: <a href="https://github.com/alex-heritier">https://github.com/alex-heritier</a></p>
-        </div>
-        <div class="footer-title">
-            <p>Alex H&eacute;ritier &copy;</p>
         </div>
     </div>
     <!-- End Footer -->

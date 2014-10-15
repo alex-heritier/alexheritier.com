@@ -1,0 +1,60 @@
+
+@import "general";
+
+/* NAVBAR */
+
+$navbar-height: 100px;
+$navbar-bg-color: #eee;
+$navbar-text-color: #222;
+$navbar-border-color: #ccc;
+
+.navbar {
+   height: $navbar-height;
+   width: 100%;
+}
+
+.nav-title {
+   padding: 5px;
+   padding-top: 8px;
+   width: 100%;
+   height: $navbar-height / 3 * 2;
+   font-size: 3em;
+   line-height: $navbar-height / 2 - $navbar-height / 20;
+   background-color: $navbar-bg-color;
+   color: $navbar-text-color;
+   border-bottom: 1px solid $navbar-border-color;
+   font-family: 'Myriad Pro';
+}
+
+.nav-links {
+   height: $navbar-height / 3;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   border-bottom: 1px solid $navbar-border-color;
+}
+
+.nav-link {
+   height: 100%;
+   width: 33.33%;
+   list-style-type: none;
+   float: right;
+   border-left: 1px solid $navbar-border-color;
+   text-align: center;
+
+   a {
+       display: block;
+       font-size: 1.2em;
+       line-height: $navbar-height / 3;
+       transition: background-color 0.3s ease-in-out;
+   }
+
+   a:hover {
+       text-decoration: none;
+       background-color: $navbar-border-color;	/* this must be equal to .navbar border-color */
+   }
+}
+
+.nav-links li:nth-of-type(3) {
+   border-left: 0;
+}
