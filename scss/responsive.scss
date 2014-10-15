@@ -12,33 +12,33 @@
     @extend .mixin-light-bg;
     overflow: auto;
     border-bottom: 2px solid black;
+
+    h1 {
+        width: 100%;
+        text-align: center;
+        font-family: 'Myriad Pro';
+    }
+
+    p {
+        width: 100%;
+        font-size: 1.2em;
+    }
+
+    img {
+        width: 60%;
+        height: auto;
+        margin: auto;
+        margin: 5px auto;
+        display: block;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
 }
 
 .intro:after {
     content:'';
     display:block;
     clear: both;
-}
-
-.intro h1 {
-    width: 100%;
-    text-align: center;
-    font-family: 'Myriad Pro';
-}
-
-.intro img {
-    width: 33.33%;
-    height: auto;
-    float: left;
-    margin-right: 20px;
-    border: 1px solid black;
-    border-radius: 5px;
-}
-
-.intro p {
-    width: 66.66%;
-    display: inline;
-    font-size: 1.2em;
 }
 
 /* SKILLS */
@@ -49,13 +49,13 @@
     overflow: auto;
     padding: $general-padding;
     border-bottom: 2px solid black;
-}
 
-.skills h1 {
-    width: 100%;
-    text-align: center;
-    font-family: 'Myriad Pro';
-    color: black;
+    h1 {
+        width: 100%;
+        text-align: center;
+        font-family: 'Myriad Pro';
+        color: black;
+    }
 }
 
 .skills-list {
@@ -63,22 +63,17 @@
 
     li {
         width: 100%;
-        padding-left: 30px;
-    }
-
-    li p {
-        font-size: 2em;
+        text-align: center;
+        font-size: 1.5em;
         color: black;
     }
 }
 
 .skills-sublist {
+    display: none;
     li {
         list-style-type: none;
-    }
-
-    li p {
-        font-size: 1.3em;
+        font-size: 0.5em;
     }
 }
 

@@ -14,16 +14,18 @@ $navbar-border-color: #ccc;
 }
 
 .nav-title {
-   padding: 5px;
-   padding-top: 8px;
-   width: 100%;
-   height: $navbar-height / 3 * 2;
-   font-size: 3em;
-   line-height: $navbar-height / 2 - $navbar-height / 20;
-   background-color: $navbar-bg-color;
-   color: $navbar-text-color;
-   border-bottom: 1px solid $navbar-border-color;
-   font-family: 'Myriad Pro';
+    text-align: center;
+    width: 100%;
+    height: $navbar-height / 3 * 2;
+    font-size: 3em;
+    background-color: $navbar-bg-color;
+    color: $navbar-text-color;
+    border-bottom: 1px solid $navbar-border-color;
+    font-family: 'Myriad Pro';
+
+    a {
+        line-height: $navbar-height / 3 * 2;
+    }
 }
 
 .nav-links {

@@ -13,7 +13,7 @@
 </head>
 <body>
 	<!-- Navbar -->
-	<div class="navbar">
+	<section class="navbar">
 		<div class="nav-title">
 			<a href="index.html">H&Eacute;RITIER</a>
 		</div>
@@ -28,32 +28,46 @@
 				<a href="">About me</a>
 			</li>
 		</ul>
-	</div>
+	</section>
 	<!-- End Navbar -->
 
 	<!-- Intro -->
-	<div class="intro">
+	<section class="intro">
 		<h1>I am&hellip;</h1>
 		<img src="img/me.jpg">
 		<p>I&apos;m Alex H&eacute;ritier, a student at San Jose State University. I like writing programs, cooking eggs, and going on late night walks in winter.</p>
-	</div>
+	</section>
 	<!-- End Intro -->
 
 	<!-- Skills -->
-	<div class="skills">
+	<section class="skills">
 		<h1>I know&hellip;</h1>
 		<ul class="skills-list">
-			<li><p>HTML</p></li>
-			<li><p>CSS</p></li>
-			<li><p>Javascript</p></li>
-			<li><p>PHP</p></li>
-			<li><p>MySQL</p></li>
+			<li>HTML</li>
+			<li>CSS
+				<ul class='skills-sublist'>
+					<li>SASS</li>
+				</ul>
+			</li>
+			<li>Javascript
+				<ul class='skills-sublist'>
+					<li>Angular.js</li>
+					<li>Require.js</li>
+					<li>jQuery</li>
+				</ul>
+			</li>
+			<li>PHP
+				<ul class='skills-sublist'>
+					<li>CodeIgniter</li>
+				</ul>
+			</li>
+			<li>MySQL</li>
 		</ul>
-	</div>
+	</section>
 	<!-- End Skills -->
 
 	<!-- Projects -->
-	<div class="projects">
+	<section class="projects">
 		<h1>I&apos;ve made&hellip;</h1>
 		<div class="projects-project">
 			<h1>www.moonfoxfarm.com</h1>
@@ -77,17 +91,17 @@
 				</li>
 			</ul>
 		</div>
-	</div>
+	</section>
 	<!-- End Projects -->
 
 	<!-- Footer -->
-	<div class="footer">
+	<section class="footer">
 		<p>Alex H&eacute;ritier &copy;</p>
 		<div class="footer-contacts">
 			<p>Email: <a href="mailto: alex.heritier@gmail.com">alex.heritier@gmail.com</a></p>
 			<p>Github: <a href="https://github.com/alex-heritier">https://github.com/alex-heritier</a></p>
 		</div>
-	</div>
+	</section>
 	<!-- End Footer -->
 
 	<!-- javascript	-->

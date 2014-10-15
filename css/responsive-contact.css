@@ -23,7 +23,8 @@ a:hover { text-decoration: underline; }
 /* NAVBAR */
 .navbar { height: 100px; width: 100%; }
 
-.nav-title { padding: 5px; padding-top: 8px; width: 100%; height: 66.66667px; font-size: 3em; line-height: 45px; background-color: #eee; color: #222; border-bottom: 1px solid #ccc; font-family: 'Myriad Pro'; }
+.nav-title { text-align: center; width: 100%; height: 66.66667px; font-size: 3em; background-color: #eee; color: #222; border-bottom: 1px solid #ccc; font-family: 'Myriad Pro'; }
+.nav-title a { line-height: 66.66667px; }
 
 .nav-links { height: 33.33333px; width: 100%; margin: 0; padding: 0; border-bottom: 1px solid #ccc; }
 
@@ -45,7 +46,8 @@ a:hover { text-decoration: underline; }
 .mixin-dark-bg, .footer { background-image: url("../img/tweed.png"); }
 
 /* FOOTER */
-.footer { color: black; width: 100%; overflow: auto; padding: 20px 10px; font-size: 1em; }
+.footer { width: 100%; overflow: auto; padding: 20px 10px; font-size: 1em; }
+.footer a, .footer p { color: black; }
 
 /* FOOTER */
 .contact { width: 100%; padding: 20px 15px; border-bottom: 2px solid black; }
