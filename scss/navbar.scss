@@ -18,12 +18,14 @@ $navbar-border-color: #ccc;
     width: 100%;
     height: $navbar-height / 3 * 2;
     font-size: 3em;
-    background-color: $navbar-bg-color;
-    color: $navbar-text-color;
+    /*background-color: $navbar-bg-color;
+    color: $navbar-text-color;*/
+    @extend .mixin-dark-bg;
     border-bottom: 1px solid $navbar-border-color;
     font-family: 'Myriad Pro';
 
     a {
+        color: black;
         line-height: $navbar-height / 3 * 2;
     }
 }

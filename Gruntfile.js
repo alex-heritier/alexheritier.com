@@ -6,7 +6,7 @@ module.exports = function(grunt) {
 					'scripts/scripts.min.js': 'scripts/scripts.js'
 				},
 				options: {
-					banner: '/* This is my minified app, built <%= grunt.template.today() %> */'
+					banner: '/* Created by Alex Heritier, built <%= grunt.template.today() %> */'
 				}
 			}
 		},

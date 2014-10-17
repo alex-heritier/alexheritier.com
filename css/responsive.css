@@ -7,7 +7,7 @@ a:hover { text-decoration: underline; }
 
 .mixin-light-bg, .intro, .projects { background-color: #ddd; }
 
-.mixin-dark-bg, .footer, .skills { background-image: url("../img/tweed.png"); }
+.mixin-dark-bg, .nav-title, .footer, .skills { background-image: url("../img/tweed.png"); }
 
 /* GENERAL */
 * { font-family: Georgia; box-sizing: border-box; color: #333; padding: 0; margin: 0; }
@@ -18,13 +18,14 @@ a:hover { text-decoration: underline; }
 
 .mixin-light-bg, .intro, .projects { background-color: #ddd; }
 
-.mixin-dark-bg, .footer, .skills { background-image: url("../img/tweed.png"); }
+.mixin-dark-bg, .nav-title, .footer, .skills { background-image: url("../img/tweed.png"); }
 
 /* NAVBAR */
 .navbar { height: 100px; width: 100%; }
 
-.nav-title { text-align: center; width: 100%; height: 66.66667px; font-size: 3em; background-color: #eee; color: #222; border-bottom: 1px solid #ccc; font-family: 'Myriad Pro'; }
-.nav-title a { line-height: 66.66667px; }
+.nav-title { text-align: center; width: 100%; height: 66.66667px; font-size: 3em; /*background-color: $navbar-bg-color;
+color: $navbar-text-color;*/ border-bottom: 1px solid #ccc; font-family: 'Myriad Pro'; }
+.nav-title a { color: black; line-height: 66.66667px; }
 
 .nav-links { height: 33.33333px; width: 100%; margin: 0; padding: 0; border-bottom: 1px solid #ccc; }
 
@@ -43,7 +44,7 @@ a:hover { text-decoration: underline; }
 
 .mixin-light-bg, .intro, .projects { background-color: #ddd; }
 
-.mixin-dark-bg, .footer, .skills { background-image: url("../img/tweed.png"); }
+.mixin-dark-bg, .nav-title, .footer, .skills { background-image: url("../img/tweed.png"); }
 
 /* FOOTER */
 .footer { width: 100%; overflow: auto; padding: 20px 10px; font-size: 1em; }

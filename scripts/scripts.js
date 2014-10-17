@@ -2,12 +2,19 @@
 requirejs.config({
     baseUrl: 'scripts/',
     paths: {
-        jquery: 'jquery.min'
+        jquery: '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min'
     }
 });
 
 require(["jquery"], function($) {
-    $(".skills-list li").click(function() {
-        $(this).find("ul").toggle({duration: 200, easing: 'linear'});
+
+    var init = function() {
+        $(".skills-list li").click(function() {
+            $(this).find("ul").toggle({duration: 200, easing: 'linear'});
+        });
+    }
+
+    $(document).ready(function() {
+        init();
     });
 });
