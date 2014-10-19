@@ -3,10 +3,10 @@ module.exports = function(grunt) {
 		uglify: {
 			dist: {
 				files: {
-					'scripts/script.min.js': 'scripts/scripts.js'
+					'scripts/scripts.min.js': 'scripts/scripts.js'
 				},
 				options: {
-					banner: '/* This is my minified app, built <%= grunt.template.today() %> */'
+					banner: '/* Created by Alex Heritier, built <%= grunt.template.today() %> */'
 				}
 			}
 		},
@@ -16,7 +16,16 @@ module.exports = function(grunt) {
 					style: 'nested'
 				},
 				files: {
-					'css/style.css': 'css/style.scss'
+					'css/style.css': 'scss/style.scss'
+				}
+			},
+			responsive: {
+				options: {
+					style: 'compact'
+				},
+				files: {
+					'css/responsive.css': 'scss/responsive.scss',
+					'css/responsive-contact.css': 'scss/responsive-contact.scss'
 				}
 			}
 		},
@@ -24,8 +33,14 @@ module.exports = function(grunt) {
 			all: ['*.js', 'scripts/scripts.js']
 		},
 		watch: {
-			files: ['scripts/scripts.js', 'css/style.scss'],
-			tasks: ['uglify:dist', 'sass:dist']
+			default: {
+				files: ['scripts/scripts.js', 'scss/style.scss'],
+				tasks: ['uglify:dist', 'sass:dist']
+			},
+			responsive: {
+				files: ['scripts/scripts.js', 'scss/*.scss'],
+				tasks: ['uglify:dist', 'sass:responsive']
+			}
 		}
 	});
 

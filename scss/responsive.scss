@@ -1,0 +1,262 @@
+
+@import "navbar";
+@import "footer";
+
+
+/* INTRO */
+/* MOBILE */
+
+.intro {
+    width: 100%;
+    padding: $general-padding;
+    @extend .mixin-light-bg;
+    overflow: auto;
+    border-bottom: 2px solid black;
+
+    h1 {
+        width: 100%;
+        text-align: center;
+        font-family: 'Myriad Pro';
+        padding-bottom: 5px;
+    }
+
+    p {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    img {
+        width: 60%;
+        height: auto;
+        margin: 5px auto;
+        display: block;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+}
+
+.intro:after {
+    content:'';
+    display:block;
+    clear: both;
+}
+
+/* TABLET */
+
+@media screen and (min-width: 600px) {
+    .intro {
+        padding: 20px 80px;
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        img {
+            float: left;
+            width: 25%;
+            margin: 0;
+        }
+
+        p {
+            float: right;
+            width: 70%;
+        }
+    }
+}
+
+/* SKILLS */
+/* MOBILE */
+
+.skills {
+    width: 100%;
+    @extend .mixin-dark-bg;
+    overflow: auto;
+    padding: $general-padding;
+    border-bottom: 2px solid black;
+
+    h1 {
+        width: 100%;
+        text-align: center;
+        font-family: 'Myriad Pro';
+        color: black;
+        padding-bottom: 5px;
+    }
+}
+
+.skills-list {
+    list-style-type: none;
+
+    li {
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+        color: black;
+    }
+
+    li:hover {
+        cursor: pointer;
+    }
+}
+
+.skills-sublist {
+    display: none;
+    li {
+        list-style-type: none;
+        font-size: 1rem;
+        color: #222;
+    }
+}
+
+/* TABLET */
+
+@media screen and (min-width: 600px) {
+    .skills {
+        padding: 20px 80px;
+    }
+
+    .skills-list {
+        li {
+            text-align: center;
+            vertical-align: top;
+            display: inline-block;
+            width: percentage(1 / 5) - 1;
+        }
+    }
+
+    .skills-sublist {
+        li {
+            width: 100%;
+        }
+    }
+}
+
+/* PROJECTS */
+/* MOBILE */
+
+.projects {
+    width: 100%;
+    @extend .mixin-light-bg;
+    padding: $general-padding;
+    border-bottom: 2px solid black;
+
+    h1 {
+        width: 100%;
+        text-align: center;
+        font-family: 'Myriad Pro';
+        color: black;
+        padding-bottom: 5px;
+    }
+}
+
+.projects-project {
+    padding-bottom: 100px;
+
+    h1 {
+        font-size: 1.5rem;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 5px;
+        font-family: 'Myriad Pro';
+        color: black;
+    }
+}
+
+.projects div:last-of-type {
+    padding-bottom: 0;
+}
+
+.projects-list {
+    list-style-type: none;
+
+    img {
+        width: 100%;
+        display: block;
+        margin: auto;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+.projects-about {
+    width: 100%;
+    margin: auto;
+
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+/* TABLET */
+
+@media screen and (min-width: 600px) {
+    .projects {
+        padding: 20px 80px;
+        height: auto;
+    }
+
+    .projects-project {
+        clear: both;
+        overflow: auto;
+        padding-bottom: 30px;
+    }
+
+    .projects-list {
+        img {
+            margin: 0;
+            float: left;
+            width: 45%;
+        }
+    }
+
+    .projects-about {
+        margin: 0;
+        float: right;
+        width: 50%;
+    }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1000px) {
+    .intro {
+        padding: 40px 100px;
+        padding-top: 40px + 60px;
+
+        h1 {
+            font-size: 3rem;
+        }
+    }
+
+    .skills {
+        padding: 40px 100px;
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        .skills-list li {
+            width: percentage(0.98 / 5);
+            font-size: 2rem;
+        }
+
+        .skills-sublist li {
+            width: 100%;
+            font-size: 1.5rem;
+        }
+    }
+
+    .projects {
+        padding: 40px 100px;
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        .projects-project {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    }
+}
