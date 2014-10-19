@@ -1,6 +1,6 @@
 img/HD/*
 backup.zip
-*.css.map
+css/*.css.map
 .sass-cache
 node_modules/
 bower_components/
