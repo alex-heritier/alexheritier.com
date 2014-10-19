@@ -4,15 +4,16 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Alex H&eacute;ritier | Web Developer</title>
 
 	<!-- stylesheets -->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script data-main="scripts/scripts" src="scripts/require.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<script data-main="scripts/scripts" src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.15/require.min.js"></script>
 </head>
 <body>
 	<!-- Navbar -->
-	<div class="navbar">
+	<section class="navbar">
 		<div class="nav-title">
 			<a href="index.html">H&Eacute;RITIER</a>
 		</div>
@@ -27,85 +28,80 @@
 				<a href="">About me</a>
 			</li>
 		</ul>
-	</div>
+	</section>
 	<!-- End Navbar -->
 
 	<!-- Intro -->
-	<div class="intro">
-		<div class="intro-filler">
-		</div>
-		<ul class="intro-inner">
-			<li class="intro-list intro-portrait">
-				<img src="img/me.jpg">
-			</li>
-			<li class="intro-list intro-about">
-				<p>I&apos;m Alex H&eacute;ritier, a student at San Jose State University. I like to write programs, cook, and go on late night walks.</p>
-			</li>
-		</ul>
-	</div>
+	<section class="intro">
+		<h1>Hi</h1>
+		<img src="img/me.jpg">
+		<p>I&apos;m Alex H&eacute;ritier, a student at San Jose State University. I like writing programs, cooking eggs, and going on late night walks in winter.</p>
+	</section>
 	<!-- End Intro -->
 
 	<!-- Skills -->
-	<div class="skills">
-		<div class="skills-inner">
-			<p class="skills-title">I know&hellip;</p>
-			<div class="skills-box-left">
-				<ul class="skills-list">
-					<li><p>HTML</p></li>
-					<li><p>CSS</p></li>
+	<section class="skills">
+		<h1>My skills</h1>
+		<ul class="skills-list">
+			<li>HTML</li>
+			<li>CSS
+				<ul class='skills-sublist'>
+					<li>SASS</li>
 				</ul>
-			</div>
-			<div class="skills-box-right">
-				<ul class="skills-list">
-					<li><p>Javascript</p></li>
-					<li><p>PHP</p></li>
-					<li><p>MySQL</p></li>
+			</li>
+			<li>Javascript
+				<ul class='skills-sublist'>
+					<li>Angular.js</li>
+					<li>Require.js</li>
+					<li>jQuery</li>
 				</ul>
-			</div>
-		</div>
-	</div>
+			</li>
+			<li>PHP
+				<ul class='skills-sublist'>
+					<li>CodeIgniter</li>
+				</ul>
+			</li>
+			<li>MySQL</li>
+		</ul>
+	</section>
 	<!-- End Skills -->
 
 	<!-- Projects -->
-	<div class="projects">
-		<div class="projects-inner">
-			<p class="projects-title">I&apos;ve made&hellip;</p>
-			<div class="projects-project">
-				<p class="projects-project-title">www.moonfoxfarm.com</p>
-				<ul class="projects-list">
-					<li class="projects-list-item projects-portrait">
-						<a href="http://www.moonfoxfarm.com"><img src="img/moonfox.jpg"></a>
-					</li>
-					<li class="projects-list-item projects-about">
-						<p>I made a custom design for the website and made a slideshow in Javascript from scratch.</p>
-					</li>
-				</ul>
-			</div>
-			<div class="projects-project">
-				<p class="projects-project-title">www.yearoneapparel.com</p>
-				<ul class="projects-list">
-					<li class="projects-list-item projects-portrait">
-						<a href="http://www.yearoneapparel.com/testing"><img src="img/yearone.jpg"></a>
-					</li>
-					<li class="projects-list-item projects-about">
-						<p>I inherited a legacy Dreamweaver codebase and fixed some major design bugs while enhancing the UI.</p>
-					</li>
-				</ul>
-			</div>
+	<section class="projects">
+		<h1>Past projects</h1>
+		<div class="projects-project">
+			<h1>www.moonfoxfarm.com</h1>
+			<ul class="projects-list">
+				<li class="projects-portrait">
+					<a href="http://www.moonfoxfarm.com"><img src="img/moonfox.jpg"></a>
+				</li>
+				<li class="projects-about">
+					<p>I made a custom design for the website and made a slideshow in Javascript from scratch.</p>
+				</li>
+			</ul>
 		</div>
-	</div>
+		<div class="projects-project">
+			<h1>www.yearoneapparel.com</h1>
+			<ul class="projects-list">
+				<li class="projects-portrait">
+					<a href="http://www.yearoneapparel.com/testing"><img src="img/yearone.jpg"></a>
+				</li>
+				<li class="projects-about">
+					<p>I inherited a legacy Dreamweaver codebase and fixed some major design bugs while enhancing the UI.</p>
+				</li>
+			</ul>
+		</div>
+	</section>
 	<!-- End Projects -->
 
 	<!-- Footer -->
-	<div class="footer">
+	<section class="footer">
+		<p>Alex H&eacute;ritier &copy;</p>
 		<div class="footer-contacts">
 			<p>Email: <a href="mailto: alex.heritier@gmail.com">alex.heritier@gmail.com</a></p>
 			<p>Github: <a href="https://github.com/alex-heritier">https://github.com/alex-heritier</a></p>
 		</div>
-		<div class="footer-title">
-			<p>Alex H&eacute;ritier &copy;</p>
-		</div>
-	</div>
+	</section>
 	<!-- End Footer -->
 
 	<!-- javascript	-->

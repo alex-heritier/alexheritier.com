@@ -1,0 +1,27 @@
+
+
+/* FOOTER */
+/* MOBILE */
+
+.footer {
+    width: 100%;
+    overflow: auto;
+    @extend .mixin-dark-bg;
+    padding: 20px 10px;
+    font-size: 1rem;
+
+    a, p {
+        color: black;
+    }
+}
+
+/* TABLET */
+
+@media screen and (min-width: 600px) {
+    .footer > p {
+        float: right;
+        display: block;
+        height: 45px;
+        line-height: 45px;
+    }
+}

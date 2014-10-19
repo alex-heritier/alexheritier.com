@@ -4,14 +4,15 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alex H&eacute;ritier | Web Developer</title>
 
     <!-- stylesheets -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive-contact.css">
 </head>
 <body>
     <!-- Navbar -->
-    <div class="navbar">
+    <section class="navbar">
         <div class="nav-title">
             <a href="index.html">H&Eacute;RITIER</a>
         </div>
@@ -26,33 +27,29 @@
                 <a href="index.html">About me</a>
             </li>
         </ul>
-    </div>
+    </section>
     <!-- End Navbar -->
 
-    <!-- Contact Form -->
-    <div class="contact">
-        <div class="contact-inner">
-            <p class="contact-title">Contact me</p>
-            <form method="POST" action="server/contact.php" class="contact-form">
-                <p class="contact-entry">Your email<input type="email" name="email"></p>
-                <p class="contact-entry">Subject<input type="text" name="title"></p>
-                <p class="contact-entry"><textarea name="message"></textarea></p>
-                <input type="submit" class="contact-submit" name="sub" value="Send">
-            </form>
-        </div>
-    </div>
-    <!-- End Contact Form -->
+    <!-- Contact -->
+    <section class="contact">
+        <h1>Contact me</h1>
+        <form method="POST" action="server/contact.php" class="contact-form">
+            <span>Your email</span><input type="email" name="email"><br>
+            <span>Subject</span><input type="text" name="title"><br>
+            <textarea name="message"></textarea>
+            <input type="submit" class="contact-submit" name="sub" value="Send">
+        </form>
+    </section>
+    <!-- End Contact -->
 
     <!-- Footer -->
-    <div class="footer">
+    <section class="footer">
+        <p>Alex H&eacute;ritier &copy;</p>
         <div class="footer-contacts">
             <p>Email: <a href="mailto: alex.heritier@gmail.com">alex.heritier@gmail.com</a></p>
             <p>Github: <a href="https://github.com/alex-heritier">https://github.com/alex-heritier</a></p>
         </div>
-        <div class="footer-title">
-            <p>Alex H&eacute;ritier &copy;</p>
-        </div>
-    </div>
+    </section>
     <!-- End Footer -->
 
     <!-- javascript	-->

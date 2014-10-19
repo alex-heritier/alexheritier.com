@@ -2,48 +2,20 @@
 requirejs.config({
     baseUrl: 'scripts/',
     paths: {
-        jquery: 'jquery.min'
+        jquery: '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min'
     }
 });
 
 require(["jquery"], function($) {
-    var masterList = {
-        "CSS": [
-            "SASS"
-        ],
-        "Javascript": [
-            "Angular.js",
-            "jQuery",
-            "Require.js"
-        ],
-        "PHP": [
-            "CodeIgniter",
-            "Laravel"
-        ]
-    };
+    var init;
 
-    function addHiddenSubMenu(elements, data) {
-        elements.each(function() {
-            var that = $(this),
-                text = that.find("p").text();
-
-            if (data[text] !== undefined) {
-                var subList = $("<ul class='skills-list-sublist'>").hide();
-                for (var i = 0; i < data[text].length; i++) {
-                    var subListLi = $("<li>"),
-                        subListP = $("<p>");
-                    subListP.text(data[text][i]);
-                    subListLi.append(subListP);
-                    subList.append(subListLi);
-                }
-                that.append(subList);
-            }
+    init = function() {
+        $(".skills-list li").click(function() {
+            $(this).find("ul").toggle({duration: 200, easing: 'linear'});
         });
     }
 
-    var elements = $(".skills-list li");
-    addHiddenSubMenu(elements, masterList);
-    elements.click(function() {
-        $(this).find("ul").toggle({duration: 200, easing: 'linear'});
+    $(document).ready(function() {
+        init();
     });
 });

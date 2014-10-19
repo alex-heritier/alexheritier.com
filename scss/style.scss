@@ -7,13 +7,17 @@ $title-font-size: 3em;
 $main-font: 'Georgia';
 $main-font-size: 1.5em;
 
-$light-bg-color: #ddd;
-$dark-bg-image: url('../img/tweed.png');
-
-
 * {
     margin: auto;
     font-family: $main-font;
+}
+
+.mixin-light-bg {
+    background-color: #ddd;
+}
+
+.mixin-dark-bg {
+    background-image: url('../img/tweed.png');
 }
 
 .mixin-title {
@@ -99,7 +103,6 @@ $navbar-border-color: #ccc;
 $intro-height: 450px;
 $intro-inner-width: 1000px;
 $intro-padding: 100px;
-$intro-bg-color: $light-bg-color;
 $intro-border-color: #000;
 
 .intro {
@@ -107,7 +110,7 @@ $intro-border-color: #000;
     height: $intro-height;
     padding-top: $intro-padding;
     padding-bottom: $intro-padding;
-    background-color: $intro-bg-color;
+    @extend .mixin-light-bg;
     border-bottom: 2px solid $intro-border-color;
     overflow: auto;
 }
@@ -115,7 +118,7 @@ $intro-border-color: #000;
 .intro-filler {
     width: 100%;
     height: $navbar-height;	/* this must be equal to .navbar height */
-    background-color: $intro-bg-color;
+    @extend .mixin-light-bg;
 }
 
 .intro-inner {
@@ -139,8 +142,7 @@ $intro-border-color: #000;
         height: 100%;
         display: block;
         margin: auto;
-        border-radius: 5px;
-        border: 2px solid black;
+        border: 1px solid black;
     }
 }
 
@@ -154,8 +156,7 @@ $intro-border-color: #000;
 /* ########################################################################################## */
 /* Skills */
 
-$skills-padding: 50px;
-$skills-bg-image: $dark-bg-image;
+$skills-padding: 30px;
 $skills-border-color: #000;
 $skills-font-color: #000;
 $skills-sublist-font-color: #222;
@@ -165,7 +166,7 @@ $skills-inner-width: 800px;
     width: 100%;
     padding-top: $skills-padding;
     padding-bottom: $skills-padding;
-    background-image: $skills-bg-image;
+    @extend .mixin-dark-bg;
     border-bottom: 2px solid $skills-border-color;
     overflow: auto;
 
@@ -177,7 +178,7 @@ $skills-inner-width: 800px;
 
 .skills-title {
     @extend .mixin-title;
-    height: 20px;
+    margin-bottom: 20px;
 }
 
 .skills-inner {
@@ -230,7 +231,6 @@ $projects-project-height: 300px;
 $projects-list-height: $projects-project-height - 50px;
 $projects-padding: 50px;
 
-$projects-bg-color: #ddd;
 $projects-border-color: #000;
 $projects-font-color: #000;
 
@@ -238,7 +238,7 @@ $projects-font-color: #000;
     width: 100%;
     padding-top: $projects-padding;
     padding-bottom: $projects-padding;
-    background-color: $projects-bg-color;
+    @extend .mixin-light-bg;
     border-bottom: 2px solid $projects-border-color;
     overflow: auto;
 }
@@ -254,8 +254,12 @@ $projects-font-color: #000;
 
 .projects-project {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 100px;
     height: $projects-project-height;
+}
+
+.projects-inner div:nth-of-type(1) {
+    margin-top: 0;
 }
 
 .projects-project-title {
@@ -301,7 +305,6 @@ $projects-font-color: #000;
 $footer-height: 80px;
 $footer-contacts-width: 300px;
 $footer-title-width: 200px;
-$footer-bg-image: $dark-bg-image;
 $footer-font-color: #000;
 $footer-font-hover-color: #bbb;
 
@@ -309,7 +312,7 @@ $footer-font-hover-color: #bbb;
 .footer {
     width: 100%;
     height: 80px;
-    background-image: $footer-bg-image;
+    @extend .mixin-dark-bg;
 
     p,
     a {
@@ -356,14 +359,13 @@ $contact-entry-width: 450px;
 $contact-entry-input-width: 300px;
 $contact-textarea-height: 300px;
 $contact-padding: 60px;
-$contact-bg-color: $light-bg-color;
 $contact-border-color: #000;
 
 .contact {
     padding-top: $contact-padding;
     width: 100%;
     height: $contact-height;
-    background-color: $contact-bg-color;
+    @extend .mixin-light-bg;
     border-bottom: 2px solid $contact-border-color;
 }
 

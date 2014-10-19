@@ -23,6 +23,7 @@
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-contrib-sass": "*",
     "grunt-contrib-uglify": "*",
-    "grunt-contrib-watch": "*"
+    "grunt-contrib-watch": "*",
+    "gulp": "^3.8.8"
   }
 }
