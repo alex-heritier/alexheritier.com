@@ -3,8 +3,6 @@
 @import "navbar";
 @import "footer";
 
-/* FOOTER */
-
 .contact {
     width: 100%;
     padding: $general-padding;
@@ -54,6 +52,7 @@
     .contact {
         padding: 20px 150px;
         height: 600px;
+        background-image: url('../img/snow.png');
     }
 
     .contact-form {
@@ -79,5 +78,15 @@
 
     .contact-form input:nth-of-type(2) {
         margin-bottom: 0;
+    }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1000px) {
+    .contact {
+        padding: 40px 200px;
+        padding-top: 100px;
+        height: 630px;
     }
 }

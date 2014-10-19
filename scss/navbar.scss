@@ -66,13 +66,14 @@ $navbar-border-color: #777;
 /* TABLET */
 
 @media screen and (min-width: 600px) {
-    $navbar-height: 100px;
+    $navbar-height: 70px;
     $navbar-border-color: #333;
 
     .navbar {
         height: $navbar-height;
         background-image: url('../img/tweed.png');
         border-bottom: 1px solid $navbar-border-color;
+        box-shadow: 0 -5px 30px black;
     }
 
     .nav-title {
@@ -83,8 +84,9 @@ $navbar-border-color: #777;
         border: 0;
 
         a {
+            font-family: 'Myriad Pro';
             font-size: 3.5rem;
-            line-height: $navbar-height;
+            line-height: $navbar-height + 10;
         }
     }
 
@@ -103,12 +105,13 @@ $navbar-border-color: #777;
         transition: opacity 0.3s ease-in-out;
 
         a {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             line-height: $navbar-height;
             color: black;
             display: block;
             height: 100%;
             width: 100%;
+            font-family: 'Myriad Pro';
         }
 
         a:hover {
@@ -120,7 +123,7 @@ $navbar-border-color: #777;
 /* DESKTOP */
 
 @media screen and (min-width: 1000px) {
-    $navbar-height: 70px;
+    $navbar-height: 60px;
 
     .navbar {
         height: $navbar-height;
@@ -136,8 +139,8 @@ $navbar-border-color: #777;
         background-image: none;
 
         a {
-            font-size: 3.5rem;
-            line-height: $navbar-height;
+            font-size: 3.2rem;
+            line-height: $navbar-height + 10;
         }
 
         a:hover {
@@ -148,6 +151,7 @@ $navbar-border-color: #777;
     .nav-links {
         border: 0;
         border-left: 1px solid #ccc;
+        width: 30%;
     }
 
     .nav-link {
@@ -155,8 +159,7 @@ $navbar-border-color: #777;
 
         a {
             line-height: $navbar-height;	/* this must be equal to .navbar height */
-            font-family: Georgia;
-            font-size: 1.8rem;
+            font-size: 1.2rem;
             display: block;
             transition: background-color 0.3s ease-in-out;
         }

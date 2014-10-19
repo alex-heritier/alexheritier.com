@@ -36,21 +36,21 @@ a:hover { text-decoration: underline; }
 .nav-links li:nth-of-type(3) { border-left: 0; }
 
 /* TABLET */
-@media screen and (min-width: 600px) { .navbar { height: 100px; background-image: url("../img/tweed.png"); border-bottom: 1px solid #333; }
+@media screen and (min-width: 600px) { .navbar { height: 70px; background-image: url("../img/tweed.png"); border-bottom: 1px solid #333; box-shadow: 0 -5px 30px black; }
   .nav-title { text-align: left; width: 33%; height: 100%; float: left; border: 0; }
-  .nav-title a { font-size: 3.5rem; line-height: 100px; }
+  .nav-title a { font-family: 'Myriad Pro'; font-size: 3.5rem; line-height: 80px; }
   .nav-links { float: right; width: 50%; height: 100%; border: 0; background-color: inherit; border-left: 1px solid #333; }
   .nav-link { border: 0; border-left: 1px solid #333; transition: opacity 0.3s ease-in-out; }
-  .nav-link a { font-size: 1.5rem; line-height: 100px; color: black; display: block; height: 100%; width: 100%; }
+  .nav-link a { font-size: 1.3rem; line-height: 70px; color: black; display: block; height: 100%; width: 100%; font-family: 'Myriad Pro'; }
   .nav-link a:hover { background-color: inherit; } }
 /* DESKTOP */
-@media screen and (min-width: 1000px) { .navbar { height: 70px; background-color: #eee; background-image: none; opacity: 0.8; position: fixed; border-bottom: 1px solid #ccc; }
+@media screen and (min-width: 1000px) { .navbar { height: 60px; background-color: #eee; background-image: none; opacity: 0.8; position: fixed; border-bottom: 1px solid #ccc; }
   .nav-title { padding-left: 5px; background-image: none; }
-  .nav-title a { font-size: 3.5rem; line-height: 70px; }
+  .nav-title a { font-size: 3.2rem; line-height: 70px; }
   .nav-title a:hover { text-decoration: none; }
-  .nav-links { border: 0; border-left: 1px solid #ccc; }
+  .nav-links { border: 0; border-left: 1px solid #ccc; width: 30%; }
   .nav-link { border-left: 1px solid #ccc; }
-  .nav-link a { line-height: 70px; /* this must be equal to .navbar height */ font-family: Georgia; font-size: 1.8rem; display: block; transition: background-color 0.3s ease-in-out; }
+  .nav-link a { line-height: 60px; /* this must be equal to .navbar height */ font-size: 1.2rem; display: block; transition: background-color 0.3s ease-in-out; }
   .nav-link a:hover { background-color: #ccc; /* this must be equal to .navbar border-color */ } }
 /* FOOTER */
 /* MOBILE */
@@ -59,7 +59,6 @@ a:hover { text-decoration: underline; }
 
 /* TABLET */
 @media screen and (min-width: 600px) { .footer > p { float: right; display: block; height: 45px; line-height: 45px; } }
-/* FOOTER */
 .contact { width: 100%; padding: 20px 15px; border-bottom: 2px solid black; }
 .contact h1 { font-size: 2rem; text-align: center; font-family: 'Myriad Pro'; }
 
@@ -72,11 +71,13 @@ a:hover { text-decoration: underline; }
 .contact-form input:nth-of-type(2) { margin-bottom: 10px; }
 
 /* TABLET */
-@media screen and (min-width: 600px) { .contact { padding: 20px 150px; height: 600px; }
+@media screen and (min-width: 600px) { .contact { padding: 20px 150px; height: 600px; background-image: url("../img/snow.png"); }
   .contact-form span { padding-bottom: 5px; }
   .contact-form input { width: 400px; margin: 0; }
   .contact-form textarea { height: 300px; font-size: 1.5rem; }
   .contact-form .contact-submit { width: 8rem; height: 4rem; }
   .contact-form input:nth-of-type(2) { margin-bottom: 0; } }
+/* DESKTOP */
+@media screen and (min-width: 1000px) { .contact { padding: 40px 200px; padding-top: 100px; height: 630px; } }
 
 /*# sourceMappingURL=responsive-contact.css.map */
