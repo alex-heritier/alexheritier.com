@@ -7,8 +7,9 @@ requirejs.config({
 });
 
 require(["jquery"], function($) {
+    var init;
 
-    var init = function() {
+    init = function() {
         $(".skills-list li").click(function() {
             $(this).find("ul").toggle({duration: 200, easing: 'linear'});
         });

@@ -5,82 +5,109 @@ a { color: #333; text-decoration: none; }
 
 a:hover { text-decoration: underline; }
 
-.mixin-light-bg, .intro, .projects { background-color: #ddd; }
-
-.mixin-dark-bg, .nav-title, .footer, .skills { background-image: url("../img/tweed.png"); }
-
-/* GENERAL */
-* { font-family: Georgia; box-sizing: border-box; color: #333; padding: 0; margin: 0; }
-
-a { color: #333; text-decoration: none; }
-
-a:hover { text-decoration: underline; }
-
-.mixin-light-bg, .intro, .projects { background-color: #ddd; }
+.mixin-light-bg, .intro, .projects { background-image: url("../img/snow.png"); }
 
 .mixin-dark-bg, .nav-title, .footer, .skills { background-image: url("../img/tweed.png"); }
 
 /* NAVBAR */
+/* MOBILE */
 .navbar { height: 100px; width: 100%; }
 
-.nav-title { text-align: center; width: 100%; height: 66.66667px; font-size: 3em; /*background-color: $navbar-bg-color;
-color: $navbar-text-color;*/ border-bottom: 1px solid #ccc; font-family: 'Myriad Pro'; }
+.nav-title { text-align: center; width: 100%; height: 66.66%; font-size: 3rem; border-bottom: 1px solid #777; font-family: 'Myriad Pro'; }
 .nav-title a { color: black; line-height: 66.66667px; }
 
-.nav-links { height: 33.33333px; width: 100%; margin: 0; padding: 0; border-bottom: 1px solid #ccc; }
+.nav-links { height: 33.33%; width: 100%; margin: 0; padding: 0; border-bottom: 1px solid #777; background-color: #888; }
 
-.nav-link { height: 100%; width: 33.33%; list-style-type: none; float: right; border-left: 1px solid #ccc; text-align: center; }
-.nav-link a { display: block; font-size: 1.2em; line-height: 33.33333px; transition: background-color 0.3s ease-in-out; }
-.nav-link a:hover { text-decoration: none; background-color: #ccc; /* this must be equal to .navbar border-color */ }
+.nav-link { height: 100%; width: 33.33%; list-style-type: none; float: right; border-left: 1px solid #777; text-align: center; }
+.nav-link a { display: block; font-size: 1.2rem; line-height: 33.33333px; transition: background-color 0.3s ease-in-out; }
+.nav-link a:hover { text-decoration: none; background-color: #777; /* this must be equal to .navbar border-color */ }
 
 .nav-links li:nth-of-type(3) { border-left: 0; }
 
-/* GENERAL */
-* { font-family: Georgia; box-sizing: border-box; color: #333; padding: 0; margin: 0; }
-
-a { color: #333; text-decoration: none; }
-
-a:hover { text-decoration: underline; }
-
-.mixin-light-bg, .intro, .projects { background-color: #ddd; }
-
-.mixin-dark-bg, .nav-title, .footer, .skills { background-image: url("../img/tweed.png"); }
-
+/* TABLET */
+@media screen and (min-width: 600px) { .navbar { height: 100px; background-image: url("../img/tweed.png"); border-bottom: 1px solid #333; }
+  .nav-title { text-align: left; width: 33%; height: 100%; float: left; border: 0; }
+  .nav-title a { font-size: 3.5rem; line-height: 100px; }
+  .nav-links { float: right; width: 50%; height: 100%; border: 0; background-color: inherit; border-left: 1px solid #333; }
+  .nav-link { border: 0; border-left: 1px solid #333; transition: opacity 0.3s ease-in-out; }
+  .nav-link a { font-size: 1.5rem; line-height: 100px; color: black; display: block; height: 100%; width: 100%; }
+  .nav-link a:hover { background-color: inherit; } }
+/* DESKTOP */
+@media screen and (min-width: 1000px) { .navbar { height: 70px; background-color: #eee; background-image: none; opacity: 0.8; position: fixed; border-bottom: 1px solid #ccc; }
+  .nav-title { padding-left: 5px; background-image: none; }
+  .nav-title a { font-size: 3.5rem; line-height: 70px; }
+  .nav-title a:hover { text-decoration: none; }
+  .nav-links { border: 0; border-left: 1px solid #ccc; }
+  .nav-link { border-left: 1px solid #ccc; }
+  .nav-link a { line-height: 70px; /* this must be equal to .navbar height */ font-family: Georgia; font-size: 1.8rem; display: block; transition: background-color 0.3s ease-in-out; }
+  .nav-link a:hover { background-color: #ccc; /* this must be equal to .navbar border-color */ } }
 /* FOOTER */
-.footer { width: 100%; overflow: auto; padding: 20px 10px; font-size: 1em; }
+/* MOBILE */
+.footer { width: 100%; overflow: auto; padding: 20px 10px; font-size: 1rem; }
 .footer a, .footer p { color: black; }
 
+/* TABLET */
+@media screen and (min-width: 600px) { .footer > p { float: right; display: block; height: 45px; line-height: 45px; } }
 /* INTRO */
+/* MOBILE */
 .intro { width: 100%; padding: 20px 15px; overflow: auto; border-bottom: 2px solid black; }
-.intro h1 { width: 100%; text-align: center; font-family: 'Myriad Pro'; }
-.intro p { width: 100%; font-size: 1.2em; }
-.intro img { width: 60%; height: auto; margin: auto; margin: 5px auto; display: block; border: 1px solid black; border-radius: 5px; }
+.intro h1 { width: 100%; text-align: center; font-family: 'Myriad Pro'; padding-bottom: 5px; }
+.intro p { width: 100%; font-size: 1.2rem; }
+.intro img { width: 60%; height: auto; margin: 5px auto; display: block; border: 1px solid black; border-radius: 5px; }
 
 .intro:after { content: ''; display: block; clear: both; }
 
+/* TABLET */
+@media screen and (min-width: 600px) { .intro { padding: 20px 80px; }
+  .intro h1 { font-size: 2rem; }
+  .intro img { float: left; width: 25%; margin: 0; }
+  .intro p { float: right; width: 70%; } }
 /* SKILLS */
+/* MOBILE */
 .skills { width: 100%; overflow: auto; padding: 20px 15px; border-bottom: 2px solid black; }
-.skills h1 { width: 100%; text-align: center; font-family: 'Myriad Pro'; color: black; }
+.skills h1 { width: 100%; text-align: center; font-family: 'Myriad Pro'; color: black; padding-bottom: 5px; }
 
 .skills-list { list-style-type: none; }
-.skills-list li { width: 100%; text-align: center; font-size: 1.5em; color: black; }
+.skills-list li { width: 100%; text-align: center; font-size: 1.5rem; color: black; }
+.skills-list li:hover { cursor: pointer; }
 
 .skills-sublist { display: none; }
-.skills-sublist li { list-style-type: none; font-size: 0.5em; }
+.skills-sublist li { list-style-type: none; font-size: 1rem; color: #222; }
 
+/* TABLET */
+@media screen and (min-width: 600px) { .skills { padding: 20px 80px; }
+  .skills-list li { text-align: center; vertical-align: top; display: inline-block; width: 19%; }
+  .skills-sublist li { width: 100%; } }
 /* PROJECTS */
+/* MOBILE */
 .projects { width: 100%; padding: 20px 15px; border-bottom: 2px solid black; }
-.projects h1 { width: 100%; text-align: center; font-family: 'Myriad Pro'; color: black; }
+.projects h1 { width: 100%; text-align: center; font-family: 'Myriad Pro'; color: black; padding-bottom: 5px; }
 
-.projects-project { padding-bottom: 40px; }
-.projects-project h1 { font-size: 1.5em; width: 100%; text-align: center; padding-bottom: 5px; font-family: 'Myriad Pro'; color: black; }
+.projects-project { padding-bottom: 100px; }
+.projects-project h1 { font-size: 1.5rem; width: 100%; text-align: center; padding-bottom: 5px; font-family: 'Myriad Pro'; color: black; }
 
-div.projects div:nth-of-type(2) { padding-bottom: 0; }
+.projects div:last-of-type { padding-bottom: 0; }
 
 .projects-list { list-style-type: none; }
 .projects-list img { width: 100%; display: block; margin: auto; border: 1px solid black; border-radius: 5px; margin-bottom: 5px; }
 
 .projects-about { width: 100%; margin: auto; }
-.projects-about p { font-size: 1.2em; }
+.projects-about p { font-size: 1.2rem; }
+
+/* TABLET */
+@media screen and (min-width: 600px) { .projects { padding: 20px 80px; height: auto; }
+  .projects-project { clear: both; overflow: auto; padding-bottom: 30px; }
+  .projects-list img { margin: 0; float: left; width: 45%; }
+  .projects-about { margin: 0; float: right; width: 50%; } }
+/* DESKTOP */
+@media screen and (min-width: 1000px) { .intro { padding: 40px 100px; padding-top: 100px; }
+  .intro h1 { font-size: 3rem; }
+  .skills { padding: 40px 100px; }
+  .skills h1 { font-size: 3rem; }
+  .skills .skills-list li { width: 19.6%; font-size: 2rem; }
+  .skills .skills-sublist li { width: 100%; font-size: 1.5rem; }
+  .projects { padding: 40px 100px; }
+  .projects h1 { font-size: 3rem; }
+  .projects .projects-project h1 { font-size: 2rem; } }
 
 /*# sourceMappingURL=responsive.css.map */

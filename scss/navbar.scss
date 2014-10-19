@@ -2,11 +2,12 @@
 @import "general";
 
 /* NAVBAR */
+/* MOBILE */
 
 $navbar-height: 100px;
 $navbar-bg-color: #eee;
 $navbar-text-color: #222;
-$navbar-border-color: #ccc;
+$navbar-border-color: #777;
 
 .navbar {
    height: $navbar-height;
@@ -16,26 +17,25 @@ $navbar-border-color: #ccc;
 .nav-title {
     text-align: center;
     width: 100%;
-    height: $navbar-height / 3 * 2;
-    font-size: 3em;
-    /*background-color: $navbar-bg-color;
-    color: $navbar-text-color;*/
+    height: 66.66%;
+    font-size: 3rem;
     @extend .mixin-dark-bg;
     border-bottom: 1px solid $navbar-border-color;
     font-family: 'Myriad Pro';
 
     a {
         color: black;
-        line-height: $navbar-height / 3 * 2;
+        line-height: 2 * $navbar-height / 3;
     }
 }
 
 .nav-links {
-   height: $navbar-height / 3;
+   height: 33.33%;
    width: 100%;
    margin: 0;
    padding: 0;
    border-bottom: 1px solid $navbar-border-color;
+   background-color: #888;
 }
 
 .nav-link {
@@ -48,7 +48,7 @@ $navbar-border-color: #ccc;
 
    a {
        display: block;
-       font-size: 1.2em;
+       font-size: 1.2rem;
        line-height: $navbar-height / 3;
        transition: background-color 0.3s ease-in-out;
    }
@@ -61,4 +61,108 @@ $navbar-border-color: #ccc;
 
 .nav-links li:nth-of-type(3) {
    border-left: 0;
+}
+
+/* TABLET */
+
+@media screen and (min-width: 600px) {
+    $navbar-height: 100px;
+    $navbar-border-color: #333;
+
+    .navbar {
+        height: $navbar-height;
+        background-image: url('../img/tweed.png');
+        border-bottom: 1px solid $navbar-border-color;
+    }
+
+    .nav-title {
+        text-align: left;
+        width: 33%;
+        height: 100%;
+        float: left;
+        border: 0;
+
+        a {
+            font-size: 3.5rem;
+            line-height: $navbar-height;
+        }
+    }
+
+    .nav-links {
+        float: right;
+        width: 50%;
+        height: 100%;
+        border: 0;
+        background-color: inherit;
+        border-left: 1px solid $navbar-border-color;
+    }
+
+    .nav-link {
+        border: 0;
+        border-left: 1px solid $navbar-border-color;
+        transition: opacity 0.3s ease-in-out;
+
+        a {
+            font-size: 1.5rem;
+            line-height: $navbar-height;
+            color: black;
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+
+        a:hover {
+            background-color: inherit;
+        }
+    }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1000px) {
+    $navbar-height: 70px;
+
+    .navbar {
+        height: $navbar-height;
+        background-color: #eee;
+        background-image: none;
+        opacity: 0.8;
+        position: fixed;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .nav-title {
+        padding-left: 5px;
+        background-image: none;
+
+        a {
+            font-size: 3.5rem;
+            line-height: $navbar-height;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    }
+
+    .nav-links {
+        border: 0;
+        border-left: 1px solid #ccc;
+    }
+
+    .nav-link {
+        border-left: 1px solid #ccc;
+
+        a {
+            line-height: $navbar-height;	/* this must be equal to .navbar height */
+            font-family: Georgia;
+            font-size: 1.8rem;
+            display: block;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        a:hover {
+            background-color: #ccc;	/* this must be equal to .navbar border-color */
+        }
+    }
 }
