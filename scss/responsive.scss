@@ -2,7 +2,7 @@
 @import "navbar";
 @import "footer";
 
-
+/* ########################################################################## */
 /* INTRO */
 /* MOBILE */
 
@@ -64,6 +64,7 @@
     }
 }
 
+/* ########################################################################## */
 /* SKILLS */
 /* MOBILE */
 
@@ -130,6 +131,7 @@
     }
 }
 
+/* ########################################################################## */
 /* PROJECTS */
 /* MOBILE */
 
@@ -149,7 +151,7 @@
 }
 
 .projects-project {
-    padding-bottom: 100px;
+    padding-bottom: 60px;
 
     h1 {
         font-size: 1.5rem;
@@ -162,7 +164,7 @@
 }
 
 .projects div:last-of-type {
-    padding-bottom: 0;
+    padding-bottom: 10px;
 }
 
 .projects-list {
@@ -201,11 +203,20 @@
         padding-bottom: 30px;
     }
 
+    .projects div:last-of-type {
+        padding-bottom: 20px;
+    }
+
     .projects-list {
         img {
             margin: 0;
             float: left;
             width: 45%;
+            box-shadow: -10px 10px 10px black;
+        }
+
+        .projects-portrait {
+            padding-left: 20px;
         }
     }
 
@@ -256,12 +267,6 @@
         .projects-project {
             h1 {
                 font-size: 2rem;
-            }
-        }
-
-        .projects-list {
-            .projects-portrait {
-                padding: 20px;
             }
         }
     }

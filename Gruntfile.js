@@ -13,14 +13,6 @@ module.exports = function(grunt) {
 		sass: {
 			dist: {
 				options: {
-					style: 'nested'
-				},
-				files: {
-					'css/style.css': 'scss/style.scss'
-				}
-			},
-			responsive: {
-				options: {
 					style: 'compact'
 				},
 				files: {
@@ -34,12 +26,8 @@ module.exports = function(grunt) {
 		},
 		watch: {
 			default: {
-				files: ['scripts/scripts.js', 'scss/style.scss'],
-				tasks: ['uglify:dist', 'sass:dist']
-			},
-			responsive: {
 				files: ['scripts/scripts.js', 'scss/*.scss'],
-				tasks: ['uglify:dist', 'sass:responsive']
+				tasks: ['uglify:dist', 'sass:dist']
 			}
 		}
 	});
