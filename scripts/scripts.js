@@ -11,7 +11,7 @@ require(["jquery"], function($) {
 
     init = function() {
         // IMPORTANT!!!
-        // this lets .intro-about and .projects-about have vertically aligned text which can't be done in CSS
+        // this lets .intro-about and .projects-about have vertically centered text which can't be done in CSS
         var projects_img = $(".projects-content img"),
             projects_about = $(".projects-about");
             intro_img = $(".intro img"),
