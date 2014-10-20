@@ -1,5 +1,5 @@
 /* GENERAL */
-* { font-family: Georgia; box-sizing: border-box; color: #333; padding: 0; margin: 0; }
+* { font-family: 'Helvetica'; box-sizing: border-box; color: #333; padding: 0; margin: 0; }
 
 a { color: #333; text-decoration: none; }
 
@@ -56,13 +56,11 @@ a:hover { text-decoration: underline; }
 .intro p { width: 100%; font-size: 1.2rem; }
 .intro img { width: 60%; height: auto; margin: 5px auto; display: block; border: 1px solid black; border-radius: 5px; }
 
-.intro:after { content: ''; display: block; clear: both; }
-
 /* TABLET */
 @media screen and (min-width: 600px) { .intro { padding: 20px 80px; }
   .intro h1 { font-size: 2rem; }
-  .intro img { float: left; width: 25%; margin: 0; }
-  .intro p { float: right; width: 70%; } }
+  .intro img { float: left; width: 40%; margin-right: 10px; }
+  .intro p { width: 100%; } }
 /* ########################################################################## */
 /* SKILLS */
 /* MOBILE */
@@ -86,33 +84,36 @@ a:hover { text-decoration: underline; }
 .projects { width: 100%; padding: 20px 15px; border-bottom: 2px solid black; }
 .projects h1 { width: 100%; text-align: center; font-family: 'Myriad Pro'; color: black; padding-bottom: 5px; }
 
-.projects-project { padding-bottom: 60px; }
-.projects-project h1 { font-size: 1.5rem; width: 100%; text-align: center; padding-bottom: 5px; font-family: 'Myriad Pro'; color: black; }
+.projects-project { padding-bottom: 60px; text-align: center; }
+.projects-project .projects-project-title { font-size: 1.5rem; width: 100%; padding-bottom: 5px; font-family: 'Myriad Pro'; color: black; }
+.projects-project img { width: 100%; display: block; margin-right: 10px; border: 1px solid black; border-radius: 5px; margin-bottom: 5px; float: left; }
+.projects-project p { width: 100%; margin: auto; text-align: left; font-size: 1.5rem; }
 
 .projects div:last-of-type { padding-bottom: 10px; }
 
-.projects-list { list-style-type: none; }
-.projects-list img { width: 100%; display: block; margin: auto; border: 1px solid black; border-radius: 5px; margin-bottom: 5px; }
-
-.projects-about { width: 100%; margin: auto; }
-.projects-about p { font-size: 1.2rem; }
-
+@media screen and (max-width: 1000px) { .projects-about { height: auto !important; } }
 /* TABLET */
-@media screen and (min-width: 600px) { .projects { padding: 20px 80px; height: auto; }
+@media screen and (min-width: 600px) { .projects { padding: 20px 60px; height: auto; }
+  .projects h1 { font-size: 2rem; }
   .projects-project { clear: both; overflow: auto; padding-bottom: 30px; }
-  .projects div:last-of-type { padding-bottom: 20px; }
-  .projects-list img { margin: 0; float: left; width: 45%; box-shadow: -10px 10px 10px black; }
-  .projects-list .projects-portrait { padding-left: 20px; }
-  .projects-about { margin: 0; float: right; width: 50%; } }
+  .projects-project .projects-project-title { font-size: 1.8rem; }
+  .projects-project .projects-content { padding-left: 20px; }
+  .projects-project .projects-content img { width: 66.66%; box-shadow: -10px 10px 10px black; }
+  .projects div:last-of-type { padding-bottom: 20px; } }
 /* DESKTOP */
-@media screen and (min-width: 1000px) { .intro { padding: 40px 100px; padding-top: 100px; }
+@media screen and (min-width: 1000px) { .intro { padding: 30px 200px; padding-top: 80px; }
   .intro h1 { font-size: 3rem; }
+  .intro img { width: 40%; }
+  .intro .intro-about { display: flex; justify-content: center; /* align horizontal */ align-items: center; /* align vertical */ }
+  .intro .intro-about p { font-size: 1.5rem; }
   .skills { padding: 40px 100px; }
   .skills h1 { font-size: 3rem; }
   .skills .skills-list li { width: 19.6%; font-size: 2rem; }
   .skills .skills-sublist li { width: 100%; font-size: 1.5rem; }
   .projects { padding: 40px 100px; }
   .projects h1 { font-size: 3rem; }
-  .projects .projects-project h1 { font-size: 2rem; } }
+  .projects .projects-project a { font-size: 2.2rem; }
+  .projects .projects-project .projects-content img { width: 45%; }
+  .projects .projects-project .projects-content .projects-about { display: flex; justify-content: center; /* align horizontal */ align-items: center; /* align vertical */ } }
 
 /*# sourceMappingURL=responsive.css.map */
