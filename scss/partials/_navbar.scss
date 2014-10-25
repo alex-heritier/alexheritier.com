@@ -1,6 +1,4 @@
 
-@import "general";
-
 /* NAVBAR */
 /* MOBILE */
 
@@ -21,11 +19,11 @@ $navbar-border-color: #777;
     font-size: 3rem;
     @extend .mixin-dark-bg;
     border-bottom: 1px solid $navbar-border-color;
-    font-family: 'Myriad Pro';
 
     a {
         color: black;
-        line-height: 2 * $navbar-height / 3;
+        line-height: 2 * $navbar-height / 3 - 10;
+        font-family: 'Myriad Pro';
     }
 }
 
@@ -51,6 +49,7 @@ $navbar-border-color: #777;
        font-size: 1.2rem;
        line-height: $navbar-height / 3;
        transition: background-color 0.3s ease-in-out;
+       font-family: 'Myriad Pro';
    }
 
    a:hover {

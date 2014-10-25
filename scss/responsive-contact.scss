@@ -1,7 +1,7 @@
 
-@import "general";
-@import "navbar";
-@import "footer";
+@import "partials/general";
+@import "partials/navbar";
+@import "partials/footer";
 
 .contact {
     width: 100%;
@@ -85,8 +85,12 @@
 
 @media screen and (min-width: 1000px) {
     .contact {
-        padding: 40px 200px;
-        padding-top: 100px;
+        h1 {
+            font-size: 3rem;
+        }
+
+        padding: 30px 200px;
+        padding-top: 80px;
         height: 630px;
     }
 }

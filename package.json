@@ -24,6 +24,7 @@
     "grunt-contrib-sass": "*",
     "grunt-contrib-uglify": "*",
     "grunt-contrib-watch": "*",
+    "grunt-newer": "^0.8.0",
     "gulp": "^3.8.8"
   }
 }
