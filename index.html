@@ -9,7 +9,7 @@
 
 	<!-- stylesheets -->
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
-	<script data-main="scripts/scripts" src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.15/require.min.js"></script>
+	<script data-main="scripts/scripts.min" src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.15/require.min.js"></script>
 </head>
 <body>
 	<!-- Navbar -->
@@ -35,7 +35,7 @@
 	<section class="intro">
 		<h1>Hi</h1>
 		<img src="img/me.jpg">
-		<p>I&apos;m Alex H&eacute;ritier, a student at San Jose State University. I like writing programs, cooking eggs, and going on late night walks in winter.</p>
+		<div class="intro-about"><p>I&apos;m Alex H&eacute;ritier and I'm an independent web developer. I create intuitive and attractive websites to help others realize their goals. In my free time I like swimming laps, cooking eggs, and going on late night walks in winter.</p></div>
 	</section>
 	<!-- End Intro -->
 
@@ -70,26 +70,18 @@
 	<section class="projects">
 		<h1>Past projects</h1>
 		<div class="projects-project">
-			<h1>www.moonfoxfarm.com</h1>
-			<ul class="projects-list">
-				<li class="projects-portrait">
-					<a href="http://www.moonfoxfarm.com"><img src="img/moonfox.jpg"></a>
-				</li>
-				<li class="projects-about">
-					<p>I made a custom design for the website and made a slideshow in Javascript from scratch.</p>
-				</li>
-			</ul>
+			<a class="projects-project-title" href="http://www.moonfoxfarm.com">www.moonfoxfarm.com</a>
+			<div class="projects-content">
+				<a href="http://www.moonfoxfarm.com"><img src="img/moonfox.jpg"></a>
+				<div class="projects-about"><p>I made a custom design for the website and made a slideshow in Javascript from scratch.</p></div>
+			</div>
 		</div>
 		<div class="projects-project">
-			<h1>www.yearoneapparel.com</h1>
-			<ul class="projects-list">
-				<li class="projects-portrait">
-					<a href="http://www.yearoneapparel.com/testing"><img src="img/yearone.jpg"></a>
-				</li>
-				<li class="projects-about">
-					<p>I inherited a legacy Dreamweaver codebase and fixed some major design bugs while enhancing the UI.</p>
-				</li>
-			</ul>
+			<a class="projects-project-title" href="http://www.yearoneapparel.com/testing">www.yearoneapparel.com</a>
+			<div class="projects-content">
+				<a href="http://www.yearoneapparel.com/testing"><img src="img/yearone.jpg"></a>
+				<div class="projects-about"><p>I inherited a legacy Dreamweaver codebase and fixed some major design bugs while enhancing the UI.</p></div>
+			</div>
 		</div>
 	</section>
 	<!-- End Projects -->
