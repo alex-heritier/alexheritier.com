@@ -19,8 +19,8 @@ module.exports = function(grunt) {
 					style: 'compact'
 				},
 				files: {
-					'css/responsive.css': 'scss/**/*.scss',
-					'css/responsive-contact.css': 'scss/responsive-contact.scss'
+					'css/responsive.css': ['scss/responsive.scss', 'scss/partials/*.scss'],
+					'css/responsive-contact.css': ['scss/responsive-contact.scss', 'scss/partials/*.scss']
 				}
 			}
 		},

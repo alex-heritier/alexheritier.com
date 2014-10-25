@@ -1,8 +1,7 @@
-
 <?php
 
 $to         = 'alex.heritier@gmail.com';
-$from       = $_POST['from']
+$from       = $_POST['from'];
 $subject    = $_POST['subject'];
 $message    = $_POST['message'];
 $headers    =   'From: ' . $from . "\n" .
