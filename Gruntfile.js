@@ -1,5 +1,8 @@
 module.exports = function(grunt) {
 	grunt.initConfig({
+		newer: {
+
+		},
 		uglify: {
 			dist: {
 				files: {
@@ -16,18 +19,18 @@ module.exports = function(grunt) {
 					style: 'compact'
 				},
 				files: {
-					'css/responsive.css': 'scss/responsive.scss',
+					'css/responsive.css': 'scss/**/*.scss',
 					'css/responsive-contact.css': 'scss/responsive-contact.scss'
 				}
 			}
 		},
 		jshint: {
-			all: ['*.js', 'scripts/scripts.js']
+			all: ['*.js', 'scripts/*.js']
 		},
 		watch: {
 			default: {
-				files: ['scripts/scripts.js', 'scss/*.scss'],
-				tasks: ['uglify:dist', 'sass:dist']
+				files: ['scripts/*.js', 'scss/*.scss', 'scss/**/*.scss'],
+				tasks: ['newer:uglify:dist', 'newer:sass:dist']
 			}
 		}
 	});
@@ -36,6 +39,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+  	grunt.loadNpmTasks('grunt-newer');
 
 	grunt.registerTask('default', [
 		'uglify:dist',

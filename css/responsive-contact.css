@@ -9,28 +9,17 @@ a:hover { text-decoration: underline; }
 
 .mixin-dark-bg, .nav-title, .footer { background-image: url("../img/tweed.png"); }
 
-/* GENERAL */
-* { font-family: 'Helvetica'; box-sizing: border-box; color: #333; padding: 0; margin: 0; }
-
-a { color: #333; text-decoration: none; }
-
-a:hover { text-decoration: underline; }
-
-.mixin-light-bg { background-image: url("../img/snow.png"); }
-
-.mixin-dark-bg, .nav-title, .footer { background-image: url("../img/tweed.png"); }
-
 /* NAVBAR */
 /* MOBILE */
 .navbar { height: 100px; width: 100%; }
 
-.nav-title { text-align: center; width: 100%; height: 66.66%; font-size: 3rem; border-bottom: 1px solid #777; font-family: 'Myriad Pro'; }
-.nav-title a { color: black; line-height: 66.66667px; }
+.nav-title { text-align: center; width: 100%; height: 66.66%; font-size: 3rem; border-bottom: 1px solid #777; }
+.nav-title a { color: black; line-height: 56.66667px; font-family: 'Myriad Pro'; }
 
 .nav-links { height: 33.33%; width: 100%; margin: 0; padding: 0; border-bottom: 1px solid #777; background-color: #888; }
 
 .nav-link { height: 100%; width: 33.33%; list-style-type: none; float: right; border-left: 1px solid #777; text-align: center; }
-.nav-link a { display: block; font-size: 1.2rem; line-height: 33.33333px; transition: background-color 0.3s ease-in-out; }
+.nav-link a { display: block; font-size: 1.2rem; line-height: 33.33333px; transition: background-color 0.3s ease-in-out; font-family: 'Myriad Pro'; }
 .nav-link a:hover { text-decoration: none; background-color: #777; /* this must be equal to .navbar border-color */ }
 
 .nav-links li:nth-of-type(3) { border-left: 0; }
@@ -78,6 +67,7 @@ a:hover { text-decoration: underline; }
   .contact-form .contact-submit { width: 8rem; height: 4rem; }
   .contact-form input:nth-of-type(2) { margin-bottom: 0; } }
 /* DESKTOP */
-@media screen and (min-width: 1000px) { .contact { padding: 40px 200px; padding-top: 100px; height: 630px; } }
+@media screen and (min-width: 1000px) { .contact { padding: 30px 200px; padding-top: 80px; height: 630px; }
+  .contact h1 { font-size: 3rem; } }
 
 /*# sourceMappingURL=responsive-contact.css.map */
