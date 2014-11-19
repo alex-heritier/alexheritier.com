@@ -61,7 +61,6 @@ a:hover { text-decoration: underline; }
   .intro h1 { font-size: 2rem; }
   .intro img { float: left; width: 40%; margin-right: 10px; }
   .intro p { width: 100%; } }
-@media screen and (max-width: 1000px) { .intro-about { height: auto !important; } }
 /* ########################################################################## */
 /* SKILLS */
 /* MOBILE */
@@ -92,7 +91,6 @@ a:hover { text-decoration: underline; }
 
 .projects div:last-of-type { padding-bottom: 10px; }
 
-@media screen and (max-width: 1000px) { .projects-about { height: auto !important; } }
 /* TABLET */
 @media screen and (min-width: 600px) { .projects { padding: 20px 60px; height: auto; }
   .projects h1 { font-size: 2rem; }
