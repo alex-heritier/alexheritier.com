@@ -1,7 +1,0 @@
-img/HD/*
-backup.zip
-css/*.css.map
-.sass-cache
-node_modules/
-bower_components/
-scripts/*.min.js

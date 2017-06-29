@@ -1,78 +1,47 @@
+
 * {
-    font-family: 'Museo Sans', Arial;
-    margin: auto;
-    background-color: #eee;
-    color: #111;
+	margin: auto;
+	font-family: Arial;
+	/*background: #e9eaec;*/
 }
 
 .main-content {
-    width: 1000px;
-    font-size: 14px;
-    margin-left: 200px;
+	margin-top: 40px;
+	width: 1000px;
 }
 
-.about-me {
-    clear: both;
+.section {
+	width: 800px;
+	margin-bottom: 30px;
 }
 
-
-.about-me .name {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-right: 10px;
-    font-size: 40px;
+.main-title {
+	font-size: 2rem;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 10px;
 }
 
-.about-me .portrait {/*
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
-    border: 2px solid;
-    float: left;
-    */
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 160px;
-    height: 160px;
-    border-radius: 10px;
-    border: 2px solid;
+.section h2 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 10px;
 }
 
-.contact-info {
-    clear: both;
+.portrait img {
+	display: block;
+	border: 2px solid black;
+	border-radius: 8px;
+	width: 200px;
+	height: 200px;
 }
 
-.title {
-    margin-top: 5px;
+.section ul {
+	width: 20%;
 }
 
-.sub-title {
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
-
-.skills .list-box ul {
-    width: 200px;
-}
-
-.skills .list-box ul:nth-child(1) {
-    float: left;
-}
-
-.skills .list-box ul:nth-child(2) {float: left;
-}
-
-.skills .list-box ul:nth-child(2) {
-    float: left;
-}
-
-.experience .title {
-    clear: both;
-    display: inline-block;
-    width: 100%;
-}
-
-.experience ul {
-    margin-bottom: 10px;
+.section li {
+	font-size: 1.5rem;
+	font-weight: bold;
 }
