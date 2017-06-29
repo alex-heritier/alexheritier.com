@@ -1,0 +1,78 @@
+* {
+    font-family: 'Museo Sans', Arial;
+    margin: auto;
+    background-color: #eee;
+    color: #111;
+}
+
+.main-content {
+    width: 1000px;
+    font-size: 14px;
+    margin-left: 200px;
+}
+
+.about-me {
+    clear: both;
+}
+
+
+.about-me .name {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    font-size: 40px;
+}
+
+.about-me .portrait {/*
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    border: 2px solid;
+    float: left;
+    */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 160px;
+    height: 160px;
+    border-radius: 10px;
+    border: 2px solid;
+}
+
+.contact-info {
+    clear: both;
+}
+
+.title {
+    margin-top: 5px;
+}
+
+.sub-title {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.skills .list-box ul {
+    width: 200px;
+}
+
+.skills .list-box ul:nth-child(1) {
+    float: left;
+}
+
+.skills .list-box ul:nth-child(2) {float: left;
+}
+
+.skills .list-box ul:nth-child(2) {
+    float: left;
+}
+
+.experience .title {
+    clear: both;
+    display: inline-block;
+    width: 100%;
+}
+
+.experience ul {
+    margin-bottom: 10px;
+}
