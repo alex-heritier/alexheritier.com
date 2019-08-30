@@ -9,19 +9,8 @@
 	margin-top: 20px;
 }
 
-.section {
-	margin-bottom: 30px;
-}
-
 .main-title {
 	font-size: 3rem;
-	font-weight: bold;
-	text-align: center;
-	margin-bottom: 10px;
-}
-
-.section h2 {
-	font-size: 2rem;
 	font-weight: bold;
 	text-align: center;
 	margin-bottom: 10px;
@@ -35,6 +24,15 @@
 	height: 200px;
 }
 
+.section {
+}
+
+.section h2 {
+	font-size: 2rem;
+	font-weight: bold;
+	text-align: center;
+}
+
 .section ul {
 	width: 180px;
 }
@@ -42,4 +40,21 @@
 .section li {
 	font-size: 1.5rem;
 	font-weight: bold;
+}
+
+.experience-section {
+
+}
+
+.important-text {
+		font-size: 2rem;
+		font-weight: bold;
+}
+
+.normal-text {
+		font-size: 2rem;
+}
+
+.detail-text {
+	font-size: 1.8rem;
 }
