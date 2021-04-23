@@ -2,7 +2,6 @@
 * {
 	margin: auto;
 	font-family: Arial;
-	/*background: #e9eaec;*/
 }
 
 .main-content {
@@ -18,41 +17,36 @@
 
 .portrait img {
 	display: block;
-	border: 2px solid black;
-	border-radius: 8px;
+	border-radius: 3px;
 	width: 200px;
 	height: 200px;
 }
 
-.section {
-}
-
-.section h2 {
-	font-size: 2rem;
-	font-weight: bold;
+.bio-section {
 	text-align: center;
 }
 
-.section ul {
-	width: 180px;
+.skill-section {
+	text-align: center;
 }
 
-.section li {
-	font-size: 1.5rem;
-	font-weight: bold;
+.links-section {
+	text-align: center;
+}
+
+.crypto-section {
 }
 
 .experience-section {
-
 }
 
 .important-text {
 		font-size: 2rem;
-		font-weight: bold;
 }
 
 .normal-text {
-		font-size: 2rem;
+		font-size: 1.8rem;
+		line-height: 1.2;
 }
 
 .detail-text {
