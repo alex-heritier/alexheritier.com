@@ -18,8 +18,9 @@
 .portrait img {
 	display: block;
 	border-radius: 3px;
-	width: 200px;
-	height: 200px;
+	width: 320px;
+	height: 180px;
+	object-fit: cover;
 }
 
 .bio-section {
