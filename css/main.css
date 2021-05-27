@@ -38,6 +38,10 @@
 .crypto-section {
 }
 
+.crypto-section p {
+	font-family: monospace;
+}
+
 .experience-section {
 }
 
