@@ -1,59 +1,91 @@
-
 * {
-	margin: auto;
-	font-family: Arial;
+    --wechat-green: #7BB32E;
+
+    box-sizing: border-box;
+    font-family: Arial;
 }
 
-.main-content {
-	margin-top: 20px;
+body {
+    margin: 0;
+    padding: 0;
 }
 
-.main-title {
-	font-size: 3rem;
-	font-weight: bold;
-	text-align: center;
-	margin-bottom: 10px;
+.screen {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
 
-.portrait img {
-	display: block;
-	border-radius: 3px;
-	width: 320px;
-	height: 180px;
-	object-fit: cover;
+.header {
+    flex: 10;
+    align-items: center;
+    box-shadow: 0px 1px 2px black;
+    background-color: var(--wechat-green);
+    color: white;
 }
 
-.bio-section {
-	text-align: center;
+.header h1 {
+    margin-left: 10px;
 }
 
-.skill-section {
-	text-align: center;
+.content {
+    flex: 83;
+    background-color: #f4f4f4;
 }
 
-.links-section {
-	text-align: center;
+.content-inner {
+    height: 100%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.crypto-section {
+.content-inner span:nth-child(2) {
+    margin: 10px;
+    font-size: 2rem;
 }
 
-.crypto-section p {
-	font-family: monospace;
+.content-inner .pay-btn {
+    width: calc(100% - 30px);
+    padding: 16px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #5CC928;
+    color: white;
+    font-size: 1.2rem;
+}
+.content-inner .pay-btn:active {
+    background-color: green;
 }
 
-.experience-section {
+.divider {
+    height: 1px;
+    width: 100%;
+    background-color: lightgray;
 }
 
-.important-text {
-		font-size: 2rem;
+.footer {
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
 }
 
-.normal-text {
-		font-size: 1.8rem;
-		line-height: 1.2;
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.detail-text {
-	font-size: 1.8rem;
+.nav span {
+    width: 22%;
+    text-align: center;
+}
+
+.nav span:hover {
+    cursor: pointer;
 }
