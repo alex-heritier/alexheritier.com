@@ -38,8 +38,9 @@
 .crypto-section {
 }
 
-.crypto-section p {
+.crypto-section a {
 	font-family: monospace;
+	color: #333;
 }
 
 .experience-section {
