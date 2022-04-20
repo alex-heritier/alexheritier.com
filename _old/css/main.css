@@ -1,0 +1,27 @@
+
+* {
+	margin: auto;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/*** HEADER */
+.header {
+	text-align: center;
+	padding: 10px;
+}
+
+/*** CONTENT */
+.content {
+	height: 100vh;
+	display: grid;
+	grid-auto-flow: row;
+	justify-content: center;
+}
+
+.asset-section {
+	margin: 40px 0;
+}
+
+.asset-section h2 {
+	padding: 4px 0;
+}
