@@ -16,8 +16,9 @@ function setupLoop(canvas) {
 
         ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
 
-        tick(canvas);
-    }, 500);
+        tick(canvas, x);
+        x++;
+    }, 10);
 }
 
 function fixScale(canvas) {
@@ -38,15 +39,15 @@ function fixScale(canvas) {
     ctx.scale(scale, scale);
 }
 
-function tick(canvas) {
-    if (this.ticker === undefined) {
-        this.ticker = 0;
+function tick(canvas, ticker) {
+    if (ticker === undefined) {
+        ticker = 0;
     }
 
     const ctx = canvas.getContext('2d');
 
     // Draw boxes
-    const boxCount = Math.floor(this.ticker / 5) * 2;
+    const boxCount = Math.floor(ticker / 5) * 2;
     for (let i = 0; i < boxCount; i++) {
         const rad = 2 * Math.PI / boxCount * i;
         const size = 300 / ((boxCount)/1.5) ;
@@ -79,7 +80,7 @@ function tick(canvas) {
 
     // Draw stats
     const stats = [
-        `Ticker: ${this.ticker}`,
+        `Ticker: ${ticker}`,
         `Box Count: ${boxCount}`,
     ];
     ctx.strokeStyle = '#000';
@@ -88,7 +89,7 @@ function tick(canvas) {
         ctx.strokeText(stat, 10, 20 + 14 * i);
     }
 
-    this.ticker++;
+    ticker++;
 }
 
 function calcBoxOffsets(rad) {
