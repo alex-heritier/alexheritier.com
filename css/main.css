@@ -38,16 +38,21 @@
 .crypto-section {
 }
 
+.crypto-section a {
+	font-family: monospace;
+	color: #333;
+}
+
 .experience-section {
 }
 
 .important-text {
-		font-size: 2rem;
+	font-size: 2rem;
 }
 
 .normal-text {
-		font-size: 1.8rem;
-		line-height: 1.2;
+	font-size: 1.8rem;
+	line-height: 1.2;
 }
 
 .detail-text {
