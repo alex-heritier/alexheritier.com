@@ -1,0 +1,55 @@
+
+* {
+	margin: auto;
+	font-family: Arial;
+}
+
+.main-content {
+	margin-top: 20px;
+}
+
+.main-title {
+	font-size: 3rem;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.portrait img {
+	display: block;
+	border-radius: 3px;
+	width: 320px;
+	height: 180px;
+	object-fit: cover;
+}
+
+.bio-section {
+	text-align: center;
+}
+
+.skill-section {
+	text-align: center;
+}
+
+.links-section {
+	text-align: center;
+}
+
+.crypto-section {
+}
+
+.experience-section {
+}
+
+.important-text {
+		font-size: 2rem;
+}
+
+.normal-text {
+		font-size: 1.8rem;
+		line-height: 1.2;
+}
+
+.detail-text {
+	font-size: 1.8rem;
+}
