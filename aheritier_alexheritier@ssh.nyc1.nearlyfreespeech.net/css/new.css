@@ -1,0 +1,57 @@
+
+* {
+	/* margin: auto; */
+	font-family: "Roboto Slab", Arial;
+}
+
+body {
+	background-color: #f4f4f2;
+}
+
+a {
+	color: #337ab7;
+    text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.wrapper {
+	width: 700px;
+	margin: 60px auto 0 auto;
+}
+
+.topbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 100px;
+}
+
+.topbar .title {
+	font-size: 2rem;
+}
+
+.topbar .nav {
+	display: flex;
+	justify-content: space-around;
+	column-gap: 40px;
+	font-size: 1.2rem;
+}
+
+.content {
+
+}
+
+.work {
+	margin-bottom: 40px;
+}
+
+.work p:nth-child(1) {
+	font-weight: bolder;
+}
+
+.work p:nth-child(2) {
+	line-height: 1.5;
+}
