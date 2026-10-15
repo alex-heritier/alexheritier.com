@@ -1,21 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <title>Alex H&eacute;ritier</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-
-  <!-- JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+  <meta charset="utf-8">
+  <title>Alex Héritier | Software Engineer</title>
+  <meta name="description" content="Alex Héritier is a software engineer working on backends, payments, mobile apps, and internal tools since 2016.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="css/main.css">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-BRGJL2Y7XK"></script>
   <script>
@@ -27,54 +18,73 @@
   </script>
 </head>
 <body>
-  <div class="container main-content">
-    <p class="main-title">Hi, I'm Alex</p>
-    <div class="portrait">
-      <img src="resources/img/portrait.jpg">
-    </div>
+  <a class="skip-link" href="#experience">Skip to experience</a>
+  <main class="main-content">
+    <header class="intro">
+      <div>
+        <h1>Hi, I'm Alex.</h1>
+        <p class="intro-description">I'm a software engineer. I've been building backends, mobile apps, and internal tools for small teams since 2016.</p>
+        <p>Most recently I led the backend for a remittance company's new mobile app, including its payment gateway. Before that I co-founded a tutoring company and built most of its software.</p>
+        <nav class="contact-links" aria-label="Contact and résumé">
+          <a class="download-link" href="resources/alex-heritier-resume.pdf" download>Download résumé <span>(PDF)</span></a>
+          <a href="mailto:alex.heritier@gmail.com">Email me</a>
+          <a href="https://github.com/alex-heritier">GitHub</a>
+          <a href="https://linkedin.com/in/alex-heritier-02373a68/">LinkedIn</a>
+        </nav>
+      </div>
+      <img class="portrait" src="resources/img/portrait.jpg" width="180" height="180" alt="Alex Héritier">
+    </header>
 
-    <div class="bio-section">
-      <h2>I work with software.</h2>
-    </div>
+    <section aria-labelledby="skills-heading" class="skills-section">
+      <h2 id="skills-heading">What I work with</h2>
+      <p>Go, Java, PHP / Laravel, Ruby / Rails, TypeScript, Dart / Flutter, and native Android. Lots of SQL, mostly MariaDB, PostgreSQL, and SQLite.</p>
+    </section>
 
-    <div class="skill-section">
-      <h3>My skills include:</h3>
-      <p>
-        <span>Java</span>&nbsp;&bullet;&nbsp;<span>Dart/Flutter</span>&nbsp;&bullet;&nbsp;<span>PHP/Laravel</span>
-      </p>
-    </div>
+    <section id="experience" aria-labelledby="experience-heading">
+      <h2 id="experience-heading">Experience</h2>
+      <article class="experience">
+        <div class="experience-header"><h3>Independent projects</h3><p class="dates">November 2025 - Present</p></div>
+        <p class="role">Solo developer</p>
+        <p>I make <a href="https://autogemstudio.com">AutoGem Studio</a>, a browser extension that automates image generation in the browser. It has 115+ registered users. The extension is TypeScript, accounts and server logic run on Supabase, and the website is Laravel.</p>
+        <p>I lean heavily on AI coding tools, and I have different models review each other's changes before I merge anything. On the side I've built a solar system simulation and I'm working on a Rust port of Civilization III.</p>
+      </article>
+      <article class="experience">
+        <div class="experience-header"><h3>TNMonex</h3><p class="dates">July 2024 - November 2025</p></div>
+        <p class="role">Backend Lead (contract)</p>
+        <p>TNMonex is an established remittance company launching a new mobile app. I led two other engineers building the Go backend that connects the app to their existing systems, and worked out the requirements with management, operations, and QA.</p>
+        <p>I built user accounts and a single payment gateway over Stripe and CyberSource: saved (tokenized) cards, authorize and capture, voids and cancellations, and rules for choosing which processor handles each payment. The app was in final client QA when my contract ended.</p>
+      </article>
+      <article class="experience">
+        <div class="experience-header"><h3>Schoolbird</h3><p class="dates">October 2020 - July 2024</p></div>
+        <p class="role">Co-founder &amp; Software Engineer</p>
+        <p>Schoolbird connects middle and high school students with tutors. I was responsible for the Flutter app, the website, and our internal admin tools, working alongside my technical co-founder and managing two remote frontend developers.</p>
+        <p>The operations team matched tutors to students by hand, so I built them dashboards for tutor availability and job status and a map (OpenStreetMap) of where everyone was. That saved them roughly 10 hours a week.</p>
+        <p>I also built live location tracking, so tutors could find a family's home and parents could see when the tutor was about to arrive. Most of the work was making it behave on flaky mobile connections and smoothing out jumpy location updates.</p>
+      </article>
+      <article class="experience">
+        <div class="experience-header"><h3>Beat45</h3><p class="dates">May 2018 - October 2020</p></div>
+        <p class="role">Senior Software Engineer</p>
+        <p>Beat45 is a music video streaming service. I built its first PHP backend, its Roku app, and its Flutter mobile app, which had a custom video player and RTMP live streaming.</p>
+        <p>When we rewrote the backend in Rails, I moved the data over, writing Ruby scripts to map records from the old schema to the new one. I also sped up slow admin pages by fixing ORM queries and dropping to raw SQL where needed.</p>
+        <p>Videos buffered too often and their volume varied from one to the next, so I set up an FFmpeg processing worker on EC2 and tuned its compression and audio normalization with the company's in-house DJs.</p>
+      </article>
+      <article class="experience">
+        <div class="experience-header"><h3>chao! / Kashin</h3><p class="dates">April 2016 - May 2018</p></div>
+        <p class="role">Mobile Lead <span>· started as an intern, full-time from May 2017</span></p>
+        <p>chao! lets restaurants run promotions, hand out QR-code coupons, and keep loyalty points for their customers. I owned the native Android app and later rewrote it in Flutter so it ran on iOS too.</p>
+        <p>On the Java / MariaDB backend I worked on coupons and loyalty, including the ledger that tracked each business's reward points.</p>
+      </article>
+    </section>
 
-    <div class="experience-section">
-      <h3 class="important-text"><a target="_blank" href="https://schoolbird.vn/en">Schoolbird</a> - November 2020 to Present</h3>
-      <h4 class="detail-text">Director of Technology</h4>
-      <h4 class="normal-text">Heading development of www.schoolbird.vn and our Flutter-based app for iOS and Android.</h4>
-    </div>
-
-    <div class="experience-section" style="margin-top: 30px;">
-      <h3 class="important-text"><a target="_blank" href="https://beat45.com">Beat45</a> - May 2018 to Present</h3>
-      <h4 class="detail-text">Senior Full Stack Engineer</h4>
-      <h4 class="normal-text">Created a PHP backend, web-based tools for content creators, and a Roku app to stream video content. Then led transition from a PHP MVP backend to more robust Ruby on Rails backend. Also developed customer facing Flutter-based mobile app.</h4>
-    </div>
-
-    <div class="experience-section">
-      <h3 class="important-text"><a target="_blank" href="https://chaoapp.me">chao!</a> - April 2016 to Present</h3>
-      <h4 class="detail-text">CTO</h4>
-      <h4 class="normal-text">Heading development of the Flutter app.</h4>
-    </div>
-
-    <div class="links-section">
-      <h2>You can see some of my work on <a target="_blank" href="https://github.com/alex-heritier">github</a>.</h2>
-      <h2>Or get in touch by <a href="mailto:alex.heritier@gmail.com">email</a> or through <a target="_blank" href="https://linkedin.com/in/alex-heritier-02373a68/">LinkedIn</a>.</h2>
-    </div>
-
-    <div class="crypto-section">
-      <br/>
-      <!-- <p>Dogecoin : DNGqxq6zdyHtnSo8esNPLMxg4u9CFJjrBM</p> -->
-      <a href="bitcoin:3Pfr1KoQB5eL4abwGknmxtXmpAp2ZMfesv">> Bitcoin : 3Pfr1KoQB5eL4abwGknmxtXmpAp2ZMfesv</a>
-      <!-- <p>Ethereum : 0xcB23E6375323012284e20ECeE8d7F48432444891</p> -->
-      <!-- <p>Algorand : IR5GMT56MPAGMI3IABK7FNTRFQ5B7KYGTYZJ7SP2V6YRUATHSOVGE7NSW4</p> -->
-      <!-- <p>Nano &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: nano_3ogoi5q7tigez8wbyx5efqbk1pjqrgmg74ge4xk1aozsaohesjzaf4ujz3y9</p> -->
-    </div>
-  </div>
+    <section class="education" aria-labelledby="education-heading">
+      <h2 id="education-heading">Education</h2>
+      <h3>San José State University</h3>
+      <p>B.S. in Computer Science · 2012 - 2017</p>
+    </section>
+    <footer>
+      <p>San Jose, California. Looking for a full-time remote role, working from Vietnam.</p>
+      <p><a href="mailto:alex.heritier@gmail.com">alex.heritier@gmail.com</a></p>
+    </footer>
+  </main>
 </body>
 </html>
